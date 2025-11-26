@@ -1,0 +1,1691 @@
+﻿<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="zh-Hans">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="zh-Hans">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!--><html lang="zh-Hans">
+<!--<![endif]-->
+<head>
+
+<!-- https://live2d.fghrsh.net/api/ 用作live2d api -->
+
+<!-- <meta
+  http-equiv="X-WebKit-CSP"
+  content="default-src 'self' 'unsafe-eval' 'unsafe-inline' https://cdn.staticfile.org http://bdimg.share.baidu.com https://cdn.datatables.net https://cdnjs.cloudflare.com https://www.google.com https://cdn.jsdelivr.net https://hm.baidu.com https://cache.cswsadlab.com https://s.w.org https://vcb-s.com *.vcb-s.com *.gtimg.cn *.gtimg.com *.qq.com *.geetest.com; media-src * data:; img-src * data:; font-src * data:; child-src 'none'; connect-src 'self' https://live2d.fghrsh.net/api/ https://cdn.jsdelivr.net; object-src 'none'"
+>
+<meta
+  http-equiv="X-Content-Security-Policy"
+  content="default-src 'self' 'unsafe-eval' 'unsafe-inline' https://cdn.staticfile.org http://bdimg.share.baidu.com https://cdn.datatables.net https://cdnjs.cloudflare.com https://www.google.com https://cdn.jsdelivr.net https://hm.baidu.com https://cache.cswsadlab.com https://s.w.org https://vcb-s.com *.vcb-s.com *.gtimg.cn *.gtimg.com *.qq.com *.geetest.com; media-src * data:; img-src * data:; font-src * data:; child-src 'none'; connect-src 'self' https://live2d.fghrsh.net/api/ https://cdn.jsdelivr.net; object-src 'none'"
+>
+<meta
+  http-equiv="Content-Security-Policy"
+  content="default-src 'self' 'unsafe-eval' 'unsafe-inline' https://cdn.staticfile.org http://bdimg.share.baidu.com https://cdn.datatables.net https://cdnjs.cloudflare.com https://www.google.com https://cdn.jsdelivr.net https://hm.baidu.com https://cache.cswsadlab.com https://s.w.org https://vcb-s.com *.vcb-s.com *.gtimg.cn *.gtimg.com *.qq.com *.geetest.com; media-src * data:; img-src * data:; font-src * data:; child-src 'none'; connect-src 'self' https://live2d.fghrsh.net/api/ https://cdn.jsdelivr.net; object-src 'none'"
+> -->
+
+<!-- 设置标题 -->
+<title>
+  [VCB-Studio 科普教程 5] 那些播放器教程背后的知识 | VCB-Studio</title>
+<!-- 设置标题结束 -->
+
+<!-- 设置关键词、描述 -->
+<!-- 设置关键词、描述结束 -->
+<meta charset="utf-8">
+<meta content="" name="keywords"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<link rel="apple-touch-icon" href="/wp-content/customRes/favicon@180.png" sizes="180x180" type="image/png">
+<link rel="icon" href="/wp-content/customRes/favicon@48.png" sizes="48x48" type="image/png">
+<link rel="icon" href="/wp-content/customRes/favicon@32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/wp-content/customRes/favicon@16.png" sizes="16x16" type="image/png">
+
+<!-- <link rel='dns-prefetch' href='https://cache.cswsadlab.com' /> -->
+<!-- <link rel='dns-prefetch' href='https://cdn.staticfile.org' /> -->
+<link rel='dns-prefetch' href='https://cdn.jsdelivr.net' />
+
+<meta name='robots' content='max-image-preview:large' />
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	<link rel="alternate" type="application/rss+xml" title="VCB-Studio &raquo; [VCB-Studio 科普教程 5] 那些播放器教程背后的知识 评论 Feed" href="https://vcb-s.com/archives/4567/feed" />
+<script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/vcb-s.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.3"}};
+/*! This file is auto-generated */
+!function(s,n){var o,i,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),a=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===a[t]})}function u(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);for(var n=e.getImageData(16,16,1,1),a=0;a<n.data.length;a++)if(0!==n.data[a])return!1;return!0}function f(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\udedf")}return!1}function g(e,t,n,a){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):s.createElement("canvas"),o=r.getContext("2d",{willReadFrequently:!0}),i=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(function(e){i[e]=t(o,e,n,a)}),i}function t(e){var t=s.createElement("script");t.src=e,t.defer=!0,s.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",i=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){s.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+g.toString()+"("+[JSON.stringify(i),f.toString(),p.toString(),u.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"}),r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=function(e){c(n=e.data),r.terminate(),t(n)})}catch(e){}c(n=g(i,f,p,u))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://vcb-s.com/wp-includes/css/dist/block-library/style.min.css?ver=6.8.3' type='text/css' media='all' />
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='wp-polls-css' href='https://vcb-s.com/wp-content/plugins/wp-polls/polls-css.css?ver=2.77.3' type='text/css' media='all' />
+<style id='wp-polls-inline-css' type='text/css'>
+.wp-polls .pollbar {
+	margin: 1px;
+	font-size: 8px;
+	line-height: 10px;
+	height: 10px;
+	background-image: url('https://vcb-s.com/wp-content/plugins/wp-polls/images/default_gradient/pollbg.gif');
+	border: 1px solid #c8c8c8;
+}
+
+</style>
+<link rel='stylesheet' id='ppress-frontend-css' href='https://vcb-s.com/wp-content/plugins/wp-user-avatar/assets/css/frontend.min.css?ver=4.16.7' type='text/css' media='all' />
+<link rel='stylesheet' id='ppress-flatpickr-css' href='https://vcb-s.com/wp-content/plugins/wp-user-avatar/assets/flatpickr/flatpickr.min.css?ver=4.16.7' type='text/css' media='all' />
+<link rel='stylesheet' id='ppress-select2-css' href='https://vcb-s.com/wp-content/plugins/wp-user-avatar/assets/select2/select2.min.css?ver=6.8.3' type='text/css' media='all' />
+<link rel='stylesheet' id='bootstrap-style-css' href='https://vcb-s.com/wp-content/themes/zanblog2_1_0/ui/css/bootstrap.css?ver=3.0.0.001' type='text/css' media='all' />
+<link rel='stylesheet' id='fontawesome-style-css' href='https://vcb-s.com/wp-content/themes/zanblog2_1_0/ui/font-awesome/css/font-awesome.min.css?ver=4.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='icheck-style-css' href='https://vcb-s.com/wp-content/themes/zanblog2_1_0/ui/css/flat/red.css?ver=6.8.3' type='text/css' media='all' />
+<link rel='stylesheet' id='theme-core-css' href='https://vcb-s.com/wp-content/themes/zanblog2_1_0/ui/css/core.css?ver=2.1.0.001' type='text/css' media='all' />
+<link rel='stylesheet' id='zanblog-style-css' href='https://vcb-s.com/wp-content/themes/zanblog2_1_0/style.css?ver=2.1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='custom-style-css' href='https://vcb-s.com/wp-content/themes/zanblog2_1_0/ui/css/custom.min.css?ver=1.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='devework-shortcodes-css' href='https://vcb-s.com/wp-content/plugins/S-Shortcodes-master/includes/shortcodes.css?ver=2.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='devework-shortcodes-fontello-css' href='https://vcb-s.com/wp-content/plugins/S-Shortcodes-master/includes/css/fontello.css?ver=2.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='shiftnav-css' href='https://vcb-s.com/wp-content/plugins/shiftnav-responsive-mobile-menu/assets/css/shiftnav.min.css?ver=1.8.1' type='text/css' media='all' />
+<link rel='stylesheet' id='shiftnav-font-awesome-css' href='https://vcb-s.com/wp-content/plugins/shiftnav-responsive-mobile-menu/assets/css/fontawesome/css/font-awesome.min.css?ver=1.8.1' type='text/css' media='all' />
+<link rel='stylesheet' id='shiftnav-custom-css' href='https://vcb-s.com/wp-content/plugins/shiftnav-responsive-mobile-menu/custom/custom.css?ver=1.8.1' type='text/css' media='all' />
+<script type="text/javascript" src="https://vcb-s.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://vcb-s.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="https://vcb-s.com/wp-content/plugins/wp-user-avatar/assets/flatpickr/flatpickr.min.js?ver=4.16.7" id="ppress-flatpickr-js"></script>
+<script type="text/javascript" src="https://vcb-s.com/wp-content/plugins/wp-user-avatar/assets/select2/select2.min.js?ver=4.16.7" id="ppress-select2-js"></script>
+<link rel="https://api.w.org/" href="https://vcb-s.com/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://vcb-s.com/wp-json/wp/v2/posts/4567" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://vcb-s.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.8.3" />
+<link rel="canonical" href="https://vcb-s.com/archives/4567" />
+<link rel='shortlink' href='https://vcb-s.com/?p=4567' />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://vcb-s.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fvcb-s.com%2Farchives%2F4567" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://vcb-s.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fvcb-s.com%2Farchives%2F4567&#038;format=xml" />
+
+		<!-- ShiftNav CSS
+	================================================================ -->
+		<style type="text/css" id="shiftnav-dynamic-css">
+				@media only screen and (min-width:991px){ #shiftnav-toggle-main, .shiftnav-toggle-mobile{ display:none; } .shiftnav-wrap { padding-top:0 !important; } }
+	@media only screen and (max-width:990px){ #zan-header{ display:none !important; } }
+
+/** ShiftNav Custom Tweaks (General Settings) **/
+body{overflow-x:hidden;}
+#shiftnav-toggle-main{background-color:#4856bd;background-color:rgba(256,256,256,.1);padding:0;}
+.shiftnav.shiftnav-skin-light ul.shiftnav-menu ul.sub-menu li.menu-item > .shiftnav-target{color:#e74c3c;}
+.shiftnav.shiftnav-skin-light.shiftnav-nojs ul.shiftnav-menu li.menu-item > .shiftnav-target:hover, .shiftnav.shiftnav-skin-light ul.shiftnav-menu.shiftnav-active-on-hover li.menu-item > .shiftnav-target:hover, .shiftnav.shiftnav-skin-light ul.shiftnav-menu.shiftnav-active-highlight li.menu-item > .shiftnav-target:active{background:#e74c3c;}
+.shiftnav-main-toggle-content>img{margin-top:-8px;}
+#shiftnav-toggle-main .shiftnav-toggle-burger, #shiftnav-toggle-main.shiftnav-toggle-main-entire-bar:before{color:#9696cc;font-size:25px;}
+
+.shiftnav-wrap{overflow:initial;}
+.shiftnav.shiftnav-skin-light{background-color:#fff;}
+.shiftnav.shiftnav-skin-light ul.shiftnav-menu ul.sub-menu{background-color:#fafafa;}
+#shiftnav-toggle-main .shiftnav-toggle-burger, #shiftnav-toggle-main.shiftnav-toggle-main-entire-bar:before {
+    padding: 15px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    border-radius: 0 6px 6px 0;
+    background-color: rgba(62,70,180,.2);
+    z-index: 251;
+}
+/* Status: Loaded from Transient */
+		</style>
+		<!-- end ShiftNav CSS -->
+
+	
+<!-- StarBox - the Author Box for Humans 3.5.4, visit: https://wordpress.org/plugins/starbox/ -->
+<!-- /StarBox - the Author Box for Humans -->
+
+<link rel='stylesheet' id='31d0caf5ef-css' href='https://vcb-s.com/wp-content/plugins/starbox/themes/business/css/frontend.min.css?ver=3.5.4' type='text/css' media='all' />
+<script type="text/javascript" src="https://vcb-s.com/wp-content/plugins/starbox/themes/business/js/frontend.min.js?ver=3.5.4" id="63b2b86b5e-js"></script>
+<link rel='stylesheet' id='af913c3cd5-css' href='https://vcb-s.com/wp-content/plugins/starbox/themes/admin/css/hidedefault.min.css?ver=3.5.4' type='text/css' media='all' />
+<style type="text/css" id="custom-background-css">
+body.custom-background { background-image: url("https://vcb-s.com/wp-content/uploads/2022/05/20_21-scaled.jpg"); background-position: right bottom; background-size: cover; background-repeat: no-repeat; background-attachment: fixed; }
+</style>
+	
+<!--[if lt IE 9]>
+  <script src="https://vcb-s.com/wp-content/themes/zanblog2_1_0/ui/js/modernizr.js"></script>
+  <script src="https://vcb-s.com/wp-content/themes/zanblog2_1_0/ui/js/respond.min.js"></script>
+  <script src="https://vcb-s.com/wp-content/themes/zanblog2_1_0/ui/js/html5shiv.js"></script>
+<![endif]-->
+
+<!-- 修正wp5.1以上移除了评论回复函数的问题 -->
+    <script type='text/javascript' src='/wp-includes/js/comment-reply.min.js?ver=5.1.1'></script>
+</head>
+<body class="wp-singular post-template-default single single-post postid-4567 single-format-standard custom-background wp-theme-zanblog2_1_0 zh metaslider-plugin"><a href="https://vcb-s.com/cdn-cgi/content?id=vunP.l_AFQRWFQCuXd3OFdO.5WEH.gohZx3hGz8A550-1764137392.8372998-1.0.1.1-on7fhGw5cfdjF1izTCaiOS.voIDlWrZR8VwDfkQaWUo" aria-hidden="true" rel="nofollow noopener" style="display: none !important; visibility: hidden !important"></a>
+<header id="zan-header" class="navbar navbar-inverse">
+  <nav class="container">
+    <a href="https://vcb-s.com"><div class="navbar-brand"></div></a>
+    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="fa fa-reorder fa-lg"></span>
+    </button>
+    <div class="navbar-collapse bs-navbar-collapse collapse">
+      <ul id="menu-navbar" class="nav navbar-nav"><li id="menu-item-7075" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-7075"><a href="https://vcb-s.com/archives/category/works"><i class="fa fa-book"></i> 作品项目</a>
+<ul class="dropdown-menu">
+	<li id="menu-item-3088" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3088"><a href="https://vcb-s.com/archives/category/works/1080p-full-hd"><i class="fa fa-play-circle-o"></i> 1080p Full HD</a></li>
+	<li id="menu-item-3089" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3089"><a href="https://vcb-s.com/archives/category/works/720p-hd"><i class="fa fa-play-circle-o"></i> 720p HD</a></li>
+	<li id="menu-item-3090" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3090"><a href="https://vcb-s.com/archives/category/works/4k-uhd"><i class="fa fa-play-circle-o"></i> 4K UHD</a></li>
+	<li id="menu-item-3342" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3342"><a href="https://vcb-s.com/archives/category/works/ms"><i class="fa fa-music"></i> 音乐/专题</a></li>
+</ul>
+</li>
+<li id="menu-item-3128" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-3128"><a href="https://vcb-s.com/archives/category/planlog"><i class="fa fa-calendar"></i> 计划与日志</a>
+<ul class="dropdown-menu">
+	<li id="menu-item-3328" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3328"><a href="/archives/138"><i class="fa fa-film"></i> 作品项目列表</a></li>
+	<li id="menu-item-10196" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10196"><a href="/archives/3551"><i class="fa fa-medkit"></i> 集中式补丁包</a></li>
+	<li id="menu-item-17072" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17072"><a href="https://vcb-s.com/archives/16986"><i class="fa fa-user"></i> 招募公告汇总</a></li>
+</ul>
+</li>
+<li id="menu-item-7074" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-7074"><a href="https://vcb-s.com/archives/category/kb"><i class="fa fa-group"></i> 科普系列</a>
+<ul class="dropdown-menu">
+	<li id="menu-item-2743" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2743"><a href="/archives/2726"><i class="fa fa-github-alt"></i> 视音频格式基础知识</a></li>
+	<li id="menu-item-7314" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7314"><a href="/archives/16639"><i class="fa fa-wrench"></i> 视频播放器推荐</a>
+	<ul class="dropdown-menu">
+		<li id="menu-item-9514" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9514"><a href="/archives/7594"><i class="fa fa-wrench"></i> mpv 配置入门</a></li>
+		<li id="menu-item-2440" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2440"><a href="/archives/16609"><i class="fa fa-wrench"></i> MPC-HC + madVR 配置入门</a></li>
+	</ul>
+</li>
+	<li id="menu-item-2456" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2456"><a href="/archives/1114"><i class="fa fa-bold"></i> 字体整合包</a></li>
+</ul>
+</li>
+<li id="menu-item-3103" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3103"><a href="https://vcb-s.com/contact"><i class="fa fa-coffee"></i> 留言板</a></li>
+<li id="menu-item-7076" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-7076"><a href="https://vcb-s.com/archives/category/about"><i class="fa fa-user"></i> 关于 VCB-S</a>
+<ul class="dropdown-menu">
+	<li id="menu-item-3347" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3347"><a href="/archives/675"><i class="fa fa-flag"></i> VCB-S 编年史</a></li>
+	<li id="menu-item-3102" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3102"><a href="https://vcb-s.com/archive"><i class="fa fa-folder-o"></i> 文章存档</a></li>
+	<li id="menu-item-17154" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17154"><a href="/vcbs_member"><i class="fa fa-user"></i> 组员简介</a></li>
+	<li id="menu-item-13853" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13853"><a href="#deplay_live_2d">打开 live2d</a></li>
+</ul>
+</li>
+</ul>    </div>
+  </nav>
+  <div id="if-fixed" class="pull-right visible-lg visible-md">
+    <i class="fa fa-thumb-tack"></i>
+    <input type="checkbox">
+  </div>
+</header>
+<div id="zan-bodyer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8">	
+				<!-- 广告 -->
+<!-- 广告结束 -->	
+
+<!-- 内容主体 -->
+<article class="article container well">
+
+	<!-- 面包屑 -->
+	<div class="breadcrumb">
+	    <i class="fa fa-home"></i> <!-- Breadcrumb NavXT 7.4.1 -->
+<span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to VCB-Studio." href="https://vcb-s.com" class="home"><span property="name">VCB-Studio</span></a><meta property="position" content="1"></span> &gt; <span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to the 我们爱科普 category archives." href="https://vcb-s.com/archives/category/kb" class="taxonomy category"><span property="name">我们爱科普</span></a><meta property="position" content="2"></span> &gt; <span property="itemListElement" typeof="ListItem"><span property="name">[VCB-Studio 科普教程 5] 那些播放器教程背后的知识</span><meta property="position" content="3"></span>	</div>
+	<!-- 面包屑结束 -->	
+
+	<!-- 大型设备文章属性 -->
+	<div class="hidden-xs">
+		<div class="title-article">
+			<h1><a href="https://vcb-s.com/archives/4567">[VCB-Studio 科普教程 5] 那些播放器教程背后的知识</a></h1>
+		</div>
+		<div class="tag-article container">
+			<span class="label label-zan"><i class="fa fa-calendar"></i> 15-12-08</span>
+			<span class="label label-zan"><i class="fa fa-tags"></i> <a href="https://vcb-s.com/archives/category/kb" rel="category tag">我们爱科普</a></span>
+			<span class="label label-zan"><i class="fa fa-user"></i> <a href="https://vcb-s.com/archives/author/littlepox" title="由 LittlePox 发布" rel="author">LittlePox</a></span>
+			<span class="label label-zan"><i class="fa fa-eye"></i> 107,639</span>
+					</div>
+	</div>
+	<!-- 大型设备文章属性结束 -->
+
+	<!-- 小型设备文章属性 -->
+	<div class="visible-xs">
+		<div class="title-article">
+			<h4><a href="https://vcb-s.com/archives/4567">[VCB-Studio 科普教程 5] 那些播放器教程背后的知识</a></h4>
+		</div>
+		<p>
+			<i class="fa fa-calendar"></i> 12-08			<i class="fa fa-eye"></i> 107,639		</p>
+	</div>
+	<!-- 小型设备文章属性结束 -->
+
+	<div class="centent-article">
+		<figure class="thumbnail hidden-xs"><img width="1239" height="678" src="https://vcb-s.com/wp-content/uploads/2015/12/15.jpg" class="attachment-full size-full wp-post-image" alt="" decoding="async" fetchpriority="high" srcset="https://vcb-s.com/wp-content/uploads/2015/12/15.jpg 1239w, https://vcb-s.com/wp-content/uploads/2015/12/15-768x420.jpg 768w" sizes="(max-width: 1239px) 100vw, 1239px" /></figure>							                 
+		<p>几乎一年前，我们写了一篇科普向的文章：<a href="http://vcb-s.com/archives/2726" target="_blank" rel="noopener noreferrer">http://vcb-s.com/archives/2726</a>，意外地广受大家好评。很多读者在评论中表达了希望有后续科普的意愿，今天我们为大家带来这个系列的后续篇。</p>
+<h4><span style="color: #ff0000;">阅读本篇之前，请务必确保你基本理解了科普三（上文链接）的内容。</span>如标题所示，本篇致力于讲述播放器相关的知识，而不是任何播放器安装教程。</h4>
+<h4>这篇教程的目的是，为那些希望折腾一个更好播放器的观众，讲述一些平时你阅读的教程，不会跟你说的重要知识，来解答以下问题：</h4>
+<p>. 播放器播放视频，是怎样的一个流程？</p>
+<p>. 硬解和软解的区别优劣在哪里？</p>
+<p>. 什么样的播放效果是最标准、最原汁原味的？</p>
+<p>. 为什么高级播放器教程全写的那么繁琐复杂，还特容易各种出错？</p>
+<p>. 为什么动漫压制特别喜欢用10bit，而且播放器动不动推荐madVR？</p>
+<p>. 不同精度在播放器中的标识是怎样？怎么判断播放过程是否对画质有折扣？</p>
+<p>. SVP/Reclock/XySubFilter是怎样插件？</p>
+<p>. 我应该怎样选择合适我的播放环境？</p>
+<p>……</p>
+<p>&nbsp;</p>
+<h3>本教程将分以下模块详细叙述：</h3>
+<p>1、播放器的工作流程：分离，解码，渲染</p>
+<p>2、硬解的定义、分类</p>
+<p>3、YUV-&gt;RGB转换过程中的细节</p>
+<p>4、硬解的优劣与选择</p>
+<p>5、图像格式的标识与查看方法</p>
+<p>6、动漫画面区别于常规录制视频的特殊性</p>
+<p>7、播放器软件的现状与分析</p>
+<p>8、其他常见播放器配件简介</p>
+<p>9、播放器配置学习的建议</p>
+<p>&nbsp;</p>
+<h3>1、播放器的工作流程：分离，解码，渲染</h3>
+<p>简单说就三个大步骤：分离、解码、渲染。</p>
+<p>分离，指的是拿到媒体文件(MKV/MP4/MKA)等，先收集相关的文件（包括外挂音轨、字幕），然后将所有轨道拆开，拆分成单独的内容。视频流、音频流、字幕、章节信息，等等。负责执行分离的模块滤镜，叫做分离器(splitter/demuxer)。</p>
+<p>当同样类型的轨道不止一条的时候（比如多音轨），分离器还负责挑选其中的一条。通常同类型多轨道，会有一条轨道被设定为“默认轨”（比如多音轨MKV一般以主音轨为默认），你想选择副音轨，你就需要在分离器中手动切换。很多播放器会在自己的界面中提供音轨/字幕切换的功能，其实也是间接利用分离器实现的。</p>
+<p>分离器现在能用的基本上只有LAV/ffmpeg了（这俩几乎可以算一家），以前还有个Haali，然而停止更新已久，不能适应HEVC时代了。</p>
+<p>分离器一般不耗费运算性能。因为它只是简单地收集、拆分和选择。</p>
+<p>&nbsp;</p>
+<p>解码，指的是将分离器丢来的各种原生压缩格式，比如H264/H265的视频，FLAC/AAC的音频，解码为非压缩的格式，比如视频是YUV/RGB（相当于bmp），音频是PCM（相当于wav），然后丢给下游模块。负责解码的模块滤镜称为解码器(decoder)。常见的有LAV/ffmpeg, ffdshow(同样停止更新了)&#8230;&#8230;</p>
+<p>当解码器能完全解码一个轨道中所有有效信息的时候，我们成为完全解码（现在绝大多数情况是如此），否则称为不完全解码。比如说，早期一些显卡的硬解，不能完全处理H264视频流的所有，解码出的画质有折扣；又或者DTS-HD MA解码器开源之前，基于ffmpeg/lav等解码器只能解码出部分信息，导致音频是有损的。</p>
+<p>解码出来的格式，都需要加上精度的度量。比如说10bit 视频完全解码后是YUV 10bit，8bit视频是YUV 8bit，16bit flac格式是PCM 16bit整数，aac是PCM 32bit浮点。<span style="color: #ff0000;">麻烦在于，解码器下游的模块不见得能照单全收。</span>比如说以前播放器就不支持10bit YUV丢给下游，解码器只好转为YUV 8bit（后来madVR之所以是一个极大的提升，就是因为madVR基本上全部通吃）。同理；很多声卡能支持24bit整数PCM已经是极限，所以32bit浮点的PCM需要转为24bit整数。</p>
+<p>如果解码器可以将最原始的数据，或者更高精度（比如有时候为了方便，将10bit转为16bit）输出给下游，我们称为全精度输出；否则，解码器会试图降低精度输出，我们称为低精度输出。少数时候，我们会让解码器做一些转换（比如vcb-s新播放器教程中，让lav解码器做YUV-&gt;RGB的转换），我们称为转换输出。</p>
+<p>解码器，特别是视频解码器，往往成为大量消耗运算资源的地方。这个问题在H264早期非常严重，那时候的主流CPU很难负担720p/1080p的高清解码，能耗巨大，移动平台尤其如此。所以才催生了各种硬件加速和硬件解码，并逐渐成为一个规范标准。</p>
+<p>&nbsp;</p>
+<p>渲染，指的是将解码后的数据，在pc硬件上（显示器、扬声器）进行播放。负责渲染的模块我们称之为渲染器(Render)，视频渲染器主流有EVR（Enhanced Video Render, 微软送的）以及madVR(madshi Video Render)。</p>
+<p>音频渲染器一般都是系统自带的（同样是微软送的），也有可以自定义的。比如MPC播放器有MPC Audio Render，可以支持类似wasapi输出等其他功能。</p>
+<p>因为显示器是RGB显示，而解码后的视频多为YUV格式，渲染器一般也需要负责将YUV转换为RGB，并保证输出的图像大小跟播放窗口吻合。</p>
+<p>多数播放器自带的滤镜（mpc/pot都有很多调色之类的功能），显卡的加成，以及SVP，都作用于解码器和渲染器中间。它们接过解码器解码的数据，对其进行处理，然后将处理后的数据送给渲染器。因为渲染器是需要借助显卡进行图形运算，YUV数据基本上需要先进入显存，所以显卡可以检测到丢来的YUV数据，对其进行“优化”。同样需要当心的是，这些滤镜和处理，往往入口精度低，处理精度也低。导致的后果就是解码器被迫低精度输出，给这些滤镜低精度处理，从而大幅降低视频精度，导致色带色块问题。</p>
+<p>字幕的加载可能在渲染器前（将字幕信息整合进YUV/RGB数据给渲染器），也可能在渲染器后（播放器来将字幕整合入生成完毕的RGB图像）。</p>
+<p>多数解码包的配置界面，主要就是让你选择分离器、解码器和渲染器的：</p>
+<p><img decoding="async" src="https://vcb-s.com/wp-content/uploads/2013/11/pc05.jpg" alt="" /></p>
+<p>如上图，上方就有让你选择视频渲染器，然后下方左右分别是针对不同文件格式的分离器，以及针对不同媒体格式的解码器。</p>
+<h3>2. 硬解的定义与分类</h3>
+<p>如上文所说，硬解是为了缓解高分辨率新编码面世初期，CPU不堪重负的解码压力，而诞生的技术。如果说软解的定义是：利用CPU通用运算能力，进行解码，那么硬解的定义可以这么说：不利用CPU通用运算能力，而是依赖其他集成电路，无论是否特制，来进行解码。</p>
+<p>更古老的时候，有些显卡没办法进行完全解码，只是帮助计算部分解码过程中的运算，那么可以归为“硬件加速”。估计Intel下一代CPU“混合加速HEVC解码”也是一样的道理。</p>
+<p>硬解现在比较常见的是以下种类：</p>
+<p>DXVA(DirectX Video Acceleration)，比较古老的方案了。Windows XP以及之前系统上流行的。上古ffdshow的硬解就是利用DXVA。DXVA规范下容易出现不完全解码，导致画质降低。Vista以后，渐渐地被抛弃。</p>
+<p>DXVA2，目前主流的硬解方式。主要由GPU来实现，<span style="color: #ff0000;">但是并非利用GPU的流处理器，INA三家都是使用了单独附在GPU芯片上的一块专职电路来完成。</span>GPU硬解能力往往不与显卡游戏性能相关，而与搭载的专职电路先进与否相关。典型的就是GT610，它是NVIDIA第一款能硬解4K视频的GPU，同时代其他GTX650/GTX580什么面对4K视频只有傻眼的份儿，就因为它的GPU塞入的专职电路，是刚开发出最先进的一款（代号为VP5，其他同时代的都是VP4）。</p>
+<p>使用DXVA解码，都需要先将视频数据（压缩的格式）传输到显存中，然后再让GPU进行解码。</p>
+<p>DXVA2有两种实现方式：native和copy-back。区别是解码后的数据是否还要传回内存。</p>
+<p>native选择不传，直接丢给同样依赖GPU工作的渲染器，数据从头到尾都在显存中。而copy-back选择传，数据会传回内存，一番处理后再传回显存，让渲染器工作。native的输出必须为YUV 8bit，而copy-back则可以为10bit。</p>
+<p>之所以需要有copy-back这么个传来传去的过程，就是因为有些滤镜，比如SVP，比如LAV的转格式，必须依赖CPU+内存进行工作。不传回来没办法继续处理。copy-back保证了硬解的流程类似软解，可以不漏下任何后处理。而代价是传来传去必定降低性能，增加能耗。需要注意的是，即便用native，也可能导致解码后的数据被“优化”，因为有些处理，包括播放器、显卡驱动带的那些，是可以完全作用在GPU环境中的。</p>
+<p>除了DXVA2，还有两种特殊的硬解：Intel Quick Sync, 和NVIDIA CUVID。如同名称所示，它们是Intel和NV的专属。</p>
+<p>Intel Quick Sync是集成在CPU中的逻辑电路承担的。注意的是这玩意并非隶属于Intel的集显，而是CPU的直属。它直接读写内存，运行表现和软解非常类似。Intel Quick Sync堪称速度快，能耗低。</p>
+<p>NVIDIA CUVID，是基于NV自己的接口，写的一个类似DXVA2(copy-back)的升级版。</p>
+<p>硬解的模式可以在LAV Decoder的设置中选择：</p>
+<p><a href="http://vcb-s.com/wp-content/uploads/2015/12/banner26.jpg"><img decoding="async" class="alignnone size-full wp-image-4576" src="http://vcb-s.com/wp-content/uploads/2015/12/banner26.jpg" alt="banner26" width="632" height="508" /></a></p>
+<p>红框的下拉框可选None(软解)，CUVID，QuickSync，DXVA2(native 和 copy back)。</p>
+<p>每选择一个模式（除了None），蓝框会显示一个单词：</p>
+<p>Active：当前正在使用这种模式解码</p>
+<p>Available：应该可以使用这种模式</p>
+<p>Not Available：不支持使用这种模式</p>
+<p>绿框当中则是显示当前在使用哪个解码器。如果是软解，显示avcodec，否则显示类似dxva2cb, dxva2n等标示。</p>
+<p>碰到没办法开启硬解，比如设备不能正常工作，或者碰到10bit AVC这种不支持的，那么自动转为软解。</p>
+<p>&nbsp;</p>
+<h3>3、YUV-&gt;RGB转换过程中的细节</h3>
+<p>将解码器输出的YUV格式，转为RGB，并且缩放到播放窗口输出，是视频渲染器的职能。可以说，如果解码过程是完全解码，也不主动添加播放器调校和驱动增强，渲染的环节决定了最终成品的画质。造成画质区别的可以说就三点：缩放算法，运算精度，和抖动算法。任何试图优化渲染器效果的尝试，都应该从这三个方面着手。</p>
+<p>缩放算法造成的区别，比较好理解。例如原图(150*150)：</p>
+<p><a href="http://img.2222.moe/images/2019/08/06/kanade.png"><img decoding="async" class="alignnone wp-image-4578 size-full" src="http://img.2222.moe/images/2019/08/06/kanade.png" alt="kanade" width="150" height="150" /></a></p>
+<p>用双线性算法（上，多数播放器默认算法）和nnedi3(下)放大到272 * 272像素：</p>
+<p><a href="http://img.2222.moe/images/2019/08/06/19867d.png"><img loading="lazy" decoding="async" class="alignnone wp-image-4604 size-full" src="http://img.2222.moe/images/2019/08/06/19867d.png" alt="19867d" width="272" height="272" /></a></p>
+<p><a href="http://img.2222.moe/images/2019/08/06/20153.png"><img loading="lazy" decoding="async" class="alignnone wp-image-4609" src="http://img.2222.moe/images/2019/08/06/20153.png" alt="2015" width="272" height="272" /></a></p>
+<p>不同算法造成的效果肉眼可见。注意上图中随处可见的锯齿，以及细线的模糊。</p>
+<p>精度，是指运算的过程中，参与运算的数，有效位数的高低。在计算机中表现为使用怎样的格式来进行，8bit/16bit/32bit整数，16bit/32bit浮点。精度不足的表现在上篇教程中已经有展示，不做赘述，然而还是提醒一句：<span style="color: #ff0000;">千万不要以为显示器是8bit，就认为8bit 整数 的片源精度/处理精度是足够的。</span></p>
+<p>另外，RGB处理相对YUV处理，精度要求相对较低；或者说，RGB处理相比较，精度稍低带来的影响不明显。（不幸的是多数时候处理的数据都是YUV，然后根据水桶原理&#8230;&#8230;）播放过程中，应该尽量减少RGB-YUV互转的次数，每一次转换都要做一次计算与取整，都会导致实际精度降低。</p>
+<p>抖动算法(Dithering Algorithm)，通常出现在高精度转低精度中。在数字图像高转低处理中，全部四舍五入不见得是好习惯。抖动算法通过科学的添加噪点，来掩盖精度的不足。比如说原图（RGB24，即RGB 8bit）：</p>
+<p><img loading="lazy" decoding="async" class="alignnone" src="http://img.2222.moe/images/2015/12/08/output0.png" alt="" width="600" height="600" /></p>
+<p>分别用四舍五入（上） 和 Floyd–Steinberg 抖动算法（下），将此图转为RGB16(RGB分别为5bit，6bit和5bit，早期windows桌面的“16色”，区别于RGB24的“真彩色”)</p>
+<p><img loading="lazy" decoding="async" class="alignnone" src="http://img.2222.moe/images/2015/12/08/output00e38b.png" alt="" width="600" height="600" /></p>
+<p><img loading="lazy" decoding="async" class="alignnone" src="http://img.2222.moe/images/2015/12/08/output012c78.png" alt="" width="600" height="600" /></p>
+<p>可以看出，使用抖动算法的图片较好的掩盖了精度不足引起的色带和偏色问题。在YUV 和 RGB的运算过程中，如果出现高精度转低精度，是否使用抖动，使用的抖动算法如何，也会决定输出效果。</p>
+<p>&nbsp;</p>
+<p>现在，我们来模拟一下渲染器的工作流程，并用蓝色标注出可能造成画质差别的地方：</p>
+<p>1、渲染器从解码器那里获取YUV数据。注意拿到的数据可能是全精度，<span style="color: #0000ff;">也可能是降精度</span>，取决于渲染器接口类型；</p>
+<p>2、播放器和显卡驱动可能会试图“<span style="color: #0000ff;">优化</span>”画面；</p>
+<p>3、如果不是YUV444格式的，<span style="color: #0000ff;">渲染器会先将UV平面放大到Y平面的大小</span>。这个步骤称为Chroma upscaling；</p>
+<p>4、将YUV444的数据，转为RGB。转换的过程势必需要浮点运算（YUV-&gt;RGB一些参与运算的常数是浮点数）；</p>
+<p>5、播放器或者渲染器<span style="color: #0000ff;">将RGB用特定的算法缩放到播放窗口大小</span>。这个步骤称为Image Upscaling(图像放大)/Downscaling(图像缩小)；</p>
+<p>6、因为4的步骤中，必须以浮点数运算，而输出结果一定是RGB 8bit整数，因此输出之前<span style="color: #0000ff;">必须有一个高转低的过程</span>。</p>
+<p>2~6每一步都涉及数字运算，<span style="color: #0000ff;">因此有运算精度的区别</span>。</p>
+<p>&nbsp;</p>
+<p>问：什么样的渲染器，什么样的输出画面是标准的、完美的？<br />
+答：没有。因为运算精度总可以无限的高，缩放算法也永远有提升的空间，<span style="color: #ff0000;">所以视频播放不存在“标准、完美”一说；</span>只有相比较而言的好与差，以及在人眼识别程度内的“接近完美”</p>
+<p>问：有哪些渲染器能“接近完美”的处理以上<strong>所有</strong>情况？<br />
+答：<strong>只有</strong>madVR。</p>
+<p>问：Windows<del>充话费</del>送的那个EVR，默认情况下有啥不好？<br />
+答：1、接口精度低，强迫YUV 8bit/RGB 8bit的输入；2、缩放算法默认是平庸的双线性；3、运算精度较低，默认只有8bit整数和16bit浮点数；4、抖动算法有，较为单一和固定；5、如果输入的是YUV数据，EVR会任由播放器和驱动乱来。</p>
+<p>问：我们能怎么拯救EVR？<br />
+答：1、因为RGB对精度要求不敏感，而且输入RGB后，驱动和播放器基本没办法插手，所以设法永远输入RGB 8bit，不让YUV数据经过低精度处理；2、让LAV解码器来做YUV-&gt;RGB。LAV可以以32bit浮点的高精度、双立方的UV放大算法、随机抖动算法，较高质量的完成转换；3、图像缩放算法手动设置为更高级的双立方。</p>
+<p>问：听上去不错，我们应该怎么操作？<br />
+答：参见<a href="http://vcb-s.com/archives/4384" target="_blank" rel="noopener noreferrer">http://vcb-s.com/archives/4384</a>或者<a href="http://vcb-s.com/archives/4407" target="_blank" rel="noopener noreferrer">http://vcb-s.com/archives/4407</a></p>
+<p>&nbsp;</p>
+<p>所以，<span style="color: #ff0000;">如果你使用的是madVR渲染器，你应该允许LAV输出它默认设置的那些格式</span>，YUV/RGB。LAV会以全精度输出YUV给madVR进行处理；<span style="color: #ff0000;">如果你使用EVR渲染器，你应该永远只允许LAV输出RGB 8bit</span>。</p>
+<p>RGB 8bit 包括RGB24和RGB32。RGB32多一个透明层通道，看似带了个没用的东西，但是因为计算机更喜欢2的次方，所以部分运算下RGB32比RGB24快。在视频播放中，这两个格式几乎完全等同；互转也人畜无害（加一个空的透明度通道 vs 去掉透明度通道）。</p>
+<p>之前基于EVR CP教程中，之所以pot推荐RGB24输出，而mpc推荐RGB32输出，是测试的结果。这样设置播放器不会再多一次转换（虽然就算转换了也没啥）。</p>
+<p>&nbsp;</p>
+<h3>4、硬解的优劣与选择</h3>
+<p>绝大多数vcb-s的教程，都让大家不要开启硬解，就算开启，优先使用DXVA2(copy-back)，这里我们做一个详细的解释。</p>
+<p>首先考虑一个问题：什么样的视频能被硬解？</p>
+<p>8bit AVC可以被各种显卡硬解；然而8bit AVC格式的软解压力小的可怜，以vcb-s常发的24fps 1080p的视频算，现在CPU软解，占用率普遍不到5%。</p>
+<p>10bit AVC没有能硬解的。（所以10bit版炮姐时代，试图硬解的洗洗睡吧。）软解，解码压力尚可，不是很可怕，24fps 1080p的视频，现在的cpu大约10%</p>
+<p>8bit HEVC现在最新显卡普遍能硬解；然而因为8bit x265的缺陷（或者说8bit x264的优越性），我们发现这玩意表现多数还不及8bit AVC，所以vcb-s从来不用；相对而言，它的解码压力也不大，大致相当于10bit AVC。</p>
+<p>10bit HEVC，目前只有NV的GTX950和GTX960支持硬解。它的软解压力算是比较大，现在主流的CPU占用在20%左右；对于上古CPU或者一些低端笔记本CPU，流畅解码会比较吃力，特别是60fps的特典。对于将来的4K 60fps，现在桌面4核心CPU基本上完全无力软解。</p>
+<p>能硬解的视频必须是YUV420格式。</p>
+<p>分析完毕了，你觉得自己需要硬解么？</p>
+<p>如果你没有GTX960/GTX950，你也基本碰不到1080p 60fps乃至4K的8bit HEVC，那么你只能去硬解8bit AVC，省那么5%不到的CPU占用率——真有这个必要么？软解吃力的硬解解不了，硬解解得了的软解解的飞起，那我们为什么要冒着各种潜在风险去开硬解呢？</p>
+<p>好吧，就算你说我真有理由要开硬解：我有GTX960/950，我的CPU真的太烂&#8230;&#8230;我们来分析下不同情况下，硬解应该怎么开。硬解设置跟你使用的渲染器有关：</p>
+<p>如果你使用madVR，通常是不建议你开硬解的。众所周知madVR会消耗大量显卡运算，因此没必要再去把大量数据塞进GPU和显存，跟madVR抢夺资源。让CPU分担解码，让GPU专心跑madVR，是比较推荐的做法；</p>
+<p>如果你使用GTX960/950硬解10bit HEVC，<span style="color: #ff0000;">请务必设置为DXVA2(copy-back)</span>，这是现在唯一可以开启10bit HEVC硬解的模式；(2020年更新：现在native/D3D11也行了，那就选这俩加加速吧）</p>
+<p>其他情况下，如果你真的非要开硬解搭配madVR，建议顺序（保证你硬件可用）： Intel QS, DXVA2(native), NV CUVID, DXVA2(copy-back)，其实用哪个都没有太多关系，主要的功耗消耗点在madVR。</p>
+<p>如果你使用EVR CP（调节过缩放算法），希望追求较高质量的播放，<span style="color: #ff0000;">你首先要排除的是DXVA2(Native)</span>。因为这种模式下，LAV会直接输出YUV 8bit给显卡，哪怕强制规定了输出只能是RGB。用DXVA2(copy-back)是可以的；这种模式下，解码后的数据将回传给CPU，继续做高质量转RGB的后续操作。</p>
+<p>一般情况下，建议顺序： Intel QS, NV CUVID, DXVA2(copy-back)</p>
+<p>所以不难理解为什么之前教程我说了，要开硬解请用DXVA2(copy-back)。<span style="color: #ff0000;">这种软解流程、硬解运算的泛用性模式，是最人畜无害的，哪怕这种模式折腾程度，导致在性能和功耗上大多是得不偿失。</span></p>
+<p>追求最大性能的，特别是用来对付那些<strong><span style="color: #000000;">能够被硬解</span></strong>的高清病毒的，请使用EVR默认，搭配DXVA2(Native)播放。这样效率应该是最高的，各种专治8bit AVC 4K的高清病毒。只不过这种做法会损失画质，因此不建议日常使用。</p>
+<p>&nbsp;</p>
+<h3>5、图像格式的标识与查看方法</h3>
+<p>在播放器中，不同格式、不同精度的图像，有着规范的定义和标号。这一点可以在LAV的设置界面很清楚的看到：</p>
+<p><a href="http://img.2222.moe/images/2019/08/06/20154.png"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-4610" src="http://img.2222.moe/images/2019/08/06/20154.png" alt="2015" width="631" height="510" /></a></p>
+<p>其中蓝色部分标示的这些是最常见到的，主要是YUV 420的不同精度，以及RGB格式（注意16bit RGB，即RGB48，在现有播放器体系下还没有实装，所以现在播放器中的RGB基本就是RGB 8bit）</p>
+<p>使用DXVA2(Native)硬解的时候，输出是DXVA，也是YUV420 8bit。</p>
+<p>RGB格式除了上文所说的RGB32和RGB24，播放器中还有XRGB和ARGB的标示，也都是一回事儿。</p>
+<p>Potplayer中观察方法，可以用tab键显示：</p>
+<p><a href="http://vcb-s.com/wp-content/uploads/2015/12/banner261.jpg"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-4611" src="http://vcb-s.com/wp-content/uploads/2015/12/banner261.jpg" alt="banner26" width="1645" height="986" /></a></p>
+<p>potplayer会给出视频解码器（图中是LAV）</p>
+<p>解码器输入的格式是HVC1(HEVC)，输出是RGB给渲染器。YUV-&gt;RGB的过程完全是LAV处理。</p>
+<p>渲染器是EVR CP，渲染整个过程，格式都是RGB，没有转回YUV。<span style="color: #ff0000;">需要注意的是你必须关闭pot自带的内置滤镜（按F5，进入&#8221;参数选项&#8221;设置。 2、点击“滤镜”，将右边的&#8221;内置<wbr />图像处理滤镜设置”激活条件设置为：&#8221;不使用”），否则potplayer一定会自作主张转回YUV的。</span></p>
+<p>缩放算法是Lanczos 3。(注意如果你播放画面跟视频画面相同，比如你在1080p的显示器上全屏播放，缩放算法会显示临近采样，这是正常的)</p>
+<p>&nbsp;</p>
+<p>MPC-HC/MPC-BE中，按Ctrl+J可以调出类似的信息：(再按1~2次取消)</p>
+<p><a href="http://img.2222.moe/images/2019/08/06/20155.png"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-4612" src="http://img.2222.moe/images/2019/08/06/20155.png" alt="2015" width="1017" height="692" /></a></p>
+<p>红框中勾选的，Formats表示渲染过程中格式变化，从始至终都是RGB；</p>
+<p>Video Size给出了原始尺寸和播放尺寸，以及使用的缩放算法(双立方 A=-0.6)</p>
+<p>Decoder则是解码器；输出是RGB。</p>
+<p>通过这样的查看方法，你可以知道你的播放器工作流程，以及设置是否按照预期。</p>
+<p>&nbsp;</p>
+<h3>6、动漫画面区别于常规录制视频的特殊性</h3>
+<p>一直以来都有这样的说法：“10bit, madVR这些东西都是那些压动漫的人弄出来的歪门邪道，我是看不出这些东西在电影上有个P用。”</p>
+<p>其实吧，这还真不是这群人眼力不好或者装睡不醒。区别于录制视频，比如电影之类的，动漫、CG等有着自己的特殊性。总结起来就两点：1、噪点少，2、线条非常突兀。</p>
+<p>视频拍摄，限制于器材水准，噪点是不可避免的，在后续制作等过程中也难以完全去除。而动漫天生可以0噪点，动漫中的噪点更多是数字图像处理中主动加上去的。<span style="color: #ff0000;">噪点的一大作用就是极大地降低视频处理和压制，对于精度的需要。说的简单点：高噪点的视频不怕低精度，反之亦然。</span></p>
+<p>怎么理解这个概念呢？我们借助一个简化的图片来演示。假设我们有一条平滑、高精度的曲线(这是y=1/x在[10,30]上的图)：</p>
+<p><img loading="lazy" decoding="async" class="alignnone" src="http://img.2222.moe/images/2015/12/08/19867df6ec8.png" alt="" width="741" height="216" /></p>
+<p>现在，我们把所有函数值，四舍五入到小数点后三位数：</p>
+<p><img loading="lazy" decoding="async" class="alignnone" src="http://img.2222.moe/images/2015/12/08/19867d0c8de.png" alt="" width="741" height="216" /></p>
+<p>降低精度的效果很明显，我们现在的图看上去跟楼梯一样，出现了明显的&#8221;断层&#8221;。表现在视频中，这种断层就是色带。同时值得注意的是，越是平坦、变化小的地方（就是之前科普中的&#8221;平面&#8221;），色带表现越严重。</p>
+<p>现在，我们模仿给图像加噪点，来给这个函数加一个小幅度(约为1%)随机抖动：</p>
+<p><img loading="lazy" decoding="async" class="alignnone" src="http://img.2222.moe/images/2015/12/08/19867d90730.png" alt="" width="743" height="216" /></p>
+<p>然后我们也把它的精度限制为小数点后3位：</p>
+<p><img loading="lazy" decoding="async" class="alignnone" src="http://img.2222.moe/images/2015/12/08/19867d5bb28.png" alt="" width="743" height="216" /></p>
+<p>可见，这一次精度降低，图像似乎没有受到太多影响，精度降低造成的阶梯状效果也很不明显。表现在数字图像处理中，意味着噪点重的图片，在降低精度的时候收到的影响很小。</p>
+<p>这就是为什么那些致力于改善精度的提升，对于电影等视频几乎没有用——播放过程的精度低怎么了；能有什么视觉影响？</p>
+<p>类似的现象，噪点会使得人眼对图像锐利度等差异不敏感，或者说，缩放算法造成的区别，变得不太可见。以之前的图为例，假如为两幅图都加上强度相同的噪点：</p>
+<p><a href="http://img.2222.moe/images/2019/08/06/20151.png"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-4607" src="http://img.2222.moe/images/2019/08/06/20151.png" alt="2015" width="272" height="272" /></a></p>
+<p><a href="http://img.2222.moe/images/2019/08/06/20152.png"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-4608" src="http://img.2222.moe/images/2019/08/06/20152.png" alt="2015" width="272" height="272" /></a></p>
+<p>区别已然几乎不可见。注意噪点是如何帮忙掩盖拉升过程中的锯齿等瑕疵，并加入虚假的高频信息，让图像看上去细节很丰富。这还是应用在线条/平面非常分明的动漫；换作电影，这样的差异只会更不起眼。</p>
+<p>小结一下，当有噪点存在的时候，主打高精度、优秀缩放算法的播放器，优势将不再明显。<span style="color: #ff0000;">从另一个方面讲，面对较少噪点、较为突出线条的动漫，对播放器的精度和缩放算法提出的要求就很高。</span>编码器也是一样的道理，动漫非常需要10bit x264/x265这样原生高精度的编码器来提升画质。</p>
+<p>因此，再面对本节开头的说法，不需要反驳，那是很自然的（摊手）。</p>
+<p>&nbsp;</p>
+<p>问：既然加噪点可以有效避免精度降低，为什么在动漫压制中不用这个方法呢？</p>
+<p>答：噪点作为一种高频信息，需要浪费成倍的码率。在今天10bit编码可以不增加（甚至减少）码率完美解决问题的前提下，我们为什么要用10年前的理解呢？</p>
+<p>PS: 10年前只有8bit编码器的时候，主动加噪确实是很常见的防色带、去色带手段。在今天商业性蓝光编码器只有8bit精度的限制下，很多动漫蓝光后期也是通过加噪点解决的（Sony那高大上的“SBMV技术”的核心）。然而，蓝光可以不惜码率，Rip不行，除非你是Yousei。（所以Yousei的Devil-Jin至今用着这种手段）</p>
+<p>&nbsp;</p>
+<h3>7、播放器软件的现状与分析</h3>
+<p>接上文分析。面对占绝对多数的电影观众，现有的播放器，pot/mpc默认，已然足够好了。再好的设置能带来的观感提升几乎没有，还不如在什么一键增强，左眼效果，以及在线字幕、弹幕上下功夫。</p>
+<p>面对多数动漫党，稍微修改一下基于EVR CP+LAV的播放设置，也能达到很满意的效果，很平衡的兼顾画质、性能与稳定性。所以如果你不求折腾（还把这么长的教程看到这里，真是辛苦你了），建议使用vcb-s最新写的两篇64bit播放器教程。</p>
+<p>如果你真的欲求不满，那么你就可以试着接触madVR，SVP这些东西。但是有一点需要提醒的是：这些纯粹由fans开发的东西，甚至包括mpc/pot这些软件，是高度不可靠的。哪怕所谓的“稳定版”，出bug的几率都很高。（更别提现在madVR一直都是“测试版”，版本号还在0.x）<span style="color: #ff0000;">MadVR至今有个问题，就是它所在的目录路径不能有中文。</span>这个问题存在几年了，作者压根不屑于，或者说，抽不出精力去修复它——你见过几个正儿八经的软件不支持安装目录有中文？！</p>
+<p>更恐怖的是，高质量播放依赖的组件数量庞大，而彼此之间缺乏系统性的联系测试。开发者往往是各自测试各自的，没有组织、没有公司说作为一个整体来调试一套方案。<span style="color: #ff0000;">当播放软件趋于复杂，组件数量增多，功能强化，出错的概率指数级上升</span>。一个基于potplayer+madVR的播放方案，不考虑音频，涉及到以下可能出问题的地方：</p>
+<p>potplayer本体,  LAV分离器，LAV视频解码器，madVR渲染器，操作系统，显卡和显卡驱动。</p>
+<p>假设每一个组件出错的平均概率是3%，求问这一套方案正常运行不出错的概率是多少？1-0.97^6=83%。</p>
+<p><span style="color: #ff0000;">也就是说，平均5个人里面，就有一个人用这套方案出错</span>。出错的理由往往很难查到，每个人都有每个人的原因。</p>
+<p>（举个我自己的例子，虽然我写的教程基于mpc-hc，但我自己在用mpc-be。因为对于mpc-hc，我设置让EVR渲染器使用双立方缩放，mpc-hc始终都使用的是最朴素的双线性，导致缩放效果很差（对我来说）。各种途径查错无功而返，最终换mpc-be问题解决。）</p>
+<p>所以以后请别问我为什么不写madVR+SVP+Reclock+XySubFilter这些高端货的教程，更别出了错问我错在哪里、怎么解决——<span style="color: #ff0000;">臣妾做不到啊！</span></p>
+<p>&nbsp;</p>
+<h3>8、其他常见播放器配件简介</h3>
+<p>除了madVR，其他播放器折腾一般还有这些配件：</p>
+<p>SVP(Smooth Video Project)比较众所周知了，它是一个插值平滑软件。本身依赖avisynth开发，通过ffdshow/ffdraw来加载，作用在解码器之后，渲染器之前。SVP只能支持YUV420 8bit输入输出。</p>
+<p>SVP的性能消耗非常可观，特别是开启OpenCL之后，如果再开启madVR（接EVR CP容易导致精度问题，这时候可以手动在ffdshow/ffdraw中加噪点来缓解），对显卡的性能和驱动稳定性都是考验。尽管如此，SVP的插值平滑带来的观看提升也是非常可观的，强烈建议madVR的倍帧满足不了、同时又有很强配置的观众们爬文安装。</p>
+<p>&nbsp;</p>
+<p>XySubFilter，是目前最先进的字幕插件，对高级字幕特效的支持，渲染的质量，性能的优化，对高精度播放以及madVR的配合都做得很到位。如果你患有字幕强迫症末期，建议去折腾一下这个插件。</p>
+<p>&nbsp;</p>
+<p>Reclock，一个致力于改善播放视频帧率不稳定的插件，不过多数人用它的目的可能还是为了它的wasapi输出。实际表现完全聊胜于无，特别是wasapi现在mpc自带的audio render就内置了，而且Reclock没有64bit版，因此不建议折腾。</p>
+<p>&nbsp;</p>
+<h3>9、播放器配置学习的建议</h3>
+<p>对于想自学高级播放器设置的同学们，教程总是不缺的，网上一搜一大堆，各大论坛什么的置顶帖，万年冷冻库，等等。写的比vcb-s现有几篇教程更新、更详细、更高端的比比皆是，也都可以作为很不错的教程。然而我一直认为，这些教程只是授人以鲤，或者授人以鳊、鲢、鳙&#8230;&#8230;，导致的结果就是来一只鲫，或者给你个渔网让你按照自己喜好捞一只，很多人一下子就傻眼了。</p>
+<p>这也是我写这篇教程的初衷，讲述一下现在网上林林总总的教程，不会跟你说的很多细节与知识。有的人madVR设置玩出了花，结果不知道检查pot内置的ffmpeg解码器，会把YUV420 10bit 降低精度+瞎转换 为YUV422 8bit丢给madVR，然后又说自己看不出区别&#8230;&#8230;这折腾的意义何在呢。</p>
+<p>学习播放器配置，有这么几条原则，是我希望分享给大家的：</p>
+<p>1、实事求是。不要盲目的去折腾，也不要为了心理安慰去折腾。一套更好的方案，只有你确实感觉到了提升，并且这个提升在你心理满意度上，足够抵消麻烦，才值得你去升级。比较的过程中，相信自己的眼睛，而不是相信别人的说教。比如说我真不推荐笔记本用户折腾任何顶级缩放算法——那么小个屏幕你能看出点啥？教程里说出花的放大算法跟你有几毛钱关系？</p>
+<p>2、循序渐进。先把一套简单基础的方案弄好弄懂，再去学习和尝试更好的方法。对于新的插件，你要尝试测试它们在你机器上的表现；对于别人的设置，设法了解他这么推荐的原因，以及这个原因是否适用于你。最典型的，很多人用着madVR问我，你在新教程里教我们LAV只勾选RGB，我要改么？看了这篇教程你应该知道要不要改与背后的原因了吧。</p>
+<p>3、量力而行。播放器越高级，组件越多，往往性能消耗越大，出错概率也越高，同时收益越少。学会放弃与妥协，毕竟，你看的是片子，不是播放器组件和参数。</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div class="abh_box abh_box_down abh_box_business">
+<ul class="abh_tabs">
+<li class="abh_about abh_active"><a href="#abh_about">About</a></li>
+<li class="abh_posts"><a href="#abh_posts">Latest Posts</a></li>
+</ul>
+<div class="abh_tab_content">
+<section class="vcard author abh_about_tab abh_tab" itemscope itemprop="author" itemtype="https://schema.org/Person" style="display:block">
+<div class="abh_image" itemscope itemtype="https://schema.org/ImageObject"><a href = "https://vcb-s.com/archives/author/littlepox" class="url" title = "LittlePox" > <img data-del="avatar" alt="LittlePox" src='https://vcb-s.com/wp-content/uploads/2015/06/lp.jpg' class='avatar pp-user-avatar avatar-250 photo ' height='250' width='250'/></a > </div>
+<div class="abh_social"> </div>
+<div class="abh_text">
+<div class="abh_name fn name" itemprop="name" ><a href="https://vcb-s.com/archives/author/littlepox" class="url">LittlePox</a></div>
+<div class="abh_job" ></div>
+<div class="description note abh_description" itemprop="description" ></div>
+</div>
+</section>
+<section class="abh_posts_tab abh_tab" >
+<div class="abh_image"><a href="https://vcb-s.com/archives/author/littlepox" class="url" title="LittlePox"><img data-del="avatar" alt="LittlePox" src='https://vcb-s.com/wp-content/uploads/2015/06/lp.jpg' class='avatar pp-user-avatar avatar-250 photo ' height='250' width='250'/></a></div>
+<div class="abh_social"> </div>
+<div class="abh_text">
+<div class="abh_name" >Latest posts by LittlePox <span class="abh_allposts">(<a href="https://vcb-s.com/archives/author/littlepox">see all</a>)</span></div>
+<div class="abh_description note" >
+<ul>
+<li>					<a href="https://vcb-s.com/archives/675">VCB-Studio 编年史（2024.12.31 更新）</a><span> - 2024年12月31日</span>				</li>
+<li>					<a href="https://vcb-s.com/archives/1442">White Album 2 / 白色相簿2 1080p AVC BDRip [Reseed V4 Fin]</a><span> - 2022年2月14日</span>				</li>
+<li>					<a href="https://vcb-s.com/archives/1955">Toradora! / 龙与虎 10-bit 1080p AVC BDRip [Reseed V2 Fin]</a><span> - 2021年12月25日</span>				</li>
+</ul>
+</div>
+</div>
+</section>
+</div></div>
+
+		<!-- 分页 -->
+		<div class="zan-page bs-example">
+      <ul class="pager">
+				<li class="previous"><a href="https://vcb-s.com/archives/4407" rel="prev">上一篇</a></li>
+				<li class="next"><a href="https://vcb-s.com/archives/4738" rel="next">下一篇</a></li>
+			</ul>
+    </div>
+    <!-- 分页 -->
+		
+		<!-- 文章版权信息 -->
+		<div class="copyright alert alert-success">
+			<p>
+				版权属于:
+				<a href="https://vcb-s.com">VCB-Studio</a>			</p>
+			<p>
+				原文地址:
+				<a href="https://vcb-s.com/archives/4567">https://vcb-s.com/archives/4567</a>			</p>
+			<p>转载时必须以链接形式注明原始出处及本声明。</p>
+		</div>
+		<!-- 文章版权信息结束 -->
+
+		<!-- 文章分享 -->
+		<div class="clearfix" id="bdshare">
+			<div class="bdsharebuttonbox pull-right">
+				<a href="#" class="bds_more" data-cmd="more"></a>
+				<a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+				<a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+				<a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+			</div>
+		</div>
+		<!-- 文章分享结束 -->
+
+		<script>
+		window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+		</script>
+		<!-- Baidu Button END -->
+	</div>				
+</article>
+<!-- 内容主体结束 -->
+
+<!-- 广告 -->
+<!-- 广告结束 -->
+				
+<!-- 相关文章 -->
+<div class="bs-example visible-md visible-lg" id="post-related">
+	<div class="row">
+		<div class="alert alert-danger related-title text-center"><i class="fa fa-heart"></i> 您可能也喜欢:</div>
+							            
+	            <div class="col-md-4">
+	            <div class="thumbnail">
+	              <div class="caption clearfix">
+										<p class="post-related-title"><a href="https://vcb-s.com/archives/18054" rel="bookmark" title="在 Windows 系统中启用长路径功能">在 Windows 系统中启用长路径功能</a></p>
+										<p class="post-related-content">从本月起我们的成品可能不再遵从较为严格的路径长度限制。这篇文章将简单介绍如何在 Windows 系统中启用长路径功能。
+
+
+Windows 系统中较为保守的最大路径...</p>
+										<p><a class="btn btn-danger pull-right read-more" href="https://vcb-s.com/archives/18054"  title="详细阅读 在 Windows 系统中启用长路径功能">阅读全文</a></p>							
+									</div>
+	            </div>					                
+	            </div>
+	            				            
+	            <div class="col-md-4">
+	            <div class="thumbnail">
+	              <div class="caption clearfix">
+										<p class="post-related-title"><a href="https://vcb-s.com/archives/16639" rel="bookmark" title="VCB-Studio 视频播放器推荐及教程索引">VCB-Studio 视频播放器推荐及教程索引</a></p>
+										<p class="post-related-content">(Image Credit: しおん@pixiv)
+目前我们推荐的播放器可以分成两大阵营：mpv 和 MPC。前者跨平台，后者仅限 Windows。
+
+mpv
+mpv 可以在 Windows、macOS 和桌面...</p>
+										<p><a class="btn btn-danger pull-right read-more" href="https://vcb-s.com/archives/16639"  title="详细阅读 VCB-Studio 视频播放器推荐及教程索引">阅读全文</a></p>							
+									</div>
+	            </div>					                
+	            </div>
+	            				            
+	            <div class="col-md-4">
+	            <div class="thumbnail">
+	              <div class="caption clearfix">
+										<p class="post-related-title"><a href="https://vcb-s.com/archives/16609" rel="bookmark" title="基于 MPC-HC 和 madVR 的播放器配置入门">基于 MPC-HC 和 madVR 的播放器配置入门</a></p>
+										<p class="post-related-content">之前的 MPC 系教程和 madVR 教程都有些过时了。老教程直接通过注册表来设置虽然简单直接，但不利于维护，索性重新写一篇。
+和 mpv 的教程 类似，本教程只提及...</p>
+										<p><a class="btn btn-danger pull-right read-more" href="https://vcb-s.com/archives/16609"  title="详细阅读 基于 MPC-HC 和 madVR 的播放器配置入门">阅读全文</a></p>							
+									</div>
+	            </div>					                
+	            </div>
+	            	</div>
+</div>
+<!-- 相关文章结束 -->				<div id="comments-template">
+  <div class="comments-wrap">
+    <div id="comments" data-url="https://vcb-s.com/wp-content/themes/zanblog2_1_0/includes/comment-ajax.php">
+              <h3 id="comments-title" class="comments-header alert alert-info"><i class="fa fa-comments"></i> 124 条评论</h3>
+        <div id="loading-comments"><i class="fa fa-spinner fa-spin"></i></div>
+        <ol class="commentlist">
+          		<li id="comment-38000" class="comment byuser comment-author-listar even thread-even depth-1">
+			<article id="div-comment-38000" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg' srcset='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg 2x' class='avatar avatar-70 photo' height='70' width='70' loading='lazy' decoding='async'/>						<b class="fn">Listar</b><span class="says">说道：</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://vcb-s.com/archives/4567/comment-page-3#comment-38000"><time datetime="2025-07-24T18:33:56+08:00">2025年7月24日 下午6:33</time></a>					</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>感谢科普 😀</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="https://vcb-s.com/wp-login.php?redirect_to=https%3A%2F%2Fvcb-s.com%2Farchives%2F4567">登录以回复</a></div>			</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+		<li id="comment-25122" class="comment byuser comment-author-raphael odd alt thread-odd thread-alt depth-1">
+			<article id="div-comment-25122" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg' srcset='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg 2x' class='avatar avatar-70 photo' height='70' width='70' loading='lazy' decoding='async'/>						<b class="fn">Raphael</b><span class="says">说道：</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://vcb-s.com/archives/4567/comment-page-3#comment-25122"><time datetime="2020-04-04T15:32:22+08:00">2020年4月4日 下午3:32</time></a>					</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>这个教程讲得非常明白了，感谢科普</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="https://vcb-s.com/wp-login.php?redirect_to=https%3A%2F%2Fvcb-s.com%2Farchives%2F4567">登录以回复</a></div>			</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+		<li id="comment-21574" class="comment byuser comment-author-ai even thread-even depth-1">
+			<article id="div-comment-21574" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg' srcset='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg 2x' class='avatar avatar-70 photo' height='70' width='70' loading='lazy' decoding='async'/>						<b class="fn">人机合一AI</b><span class="says">说道：</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://vcb-s.com/archives/4567/comment-page-3#comment-21574"><time datetime="2019-07-17T13:37:51+08:00">2019年7月17日 下午1:37</time></a>					</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>偶然间发现了另一个插帧软件叫dmitrirender，想和大佬们了解一下</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="https://vcb-s.com/wp-login.php?redirect_to=https%3A%2F%2Fvcb-s.com%2Farchives%2F4567">登录以回复</a></div>			</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+		<li id="comment-21367" class="comment byuser comment-author-hachiman odd alt thread-odd thread-alt depth-1">
+			<article id="div-comment-21367" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img data-del="avatar" src='https://vcb-s.com/wp-content/uploads/2020/04/bqb4.png' class='avatar pp-user-avatar avatar-70 photo ' height='70' width='70'/>						<b class="fn">hachiman</b><span class="says">说道：</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://vcb-s.com/archives/4567/comment-page-3#comment-21367"><time datetime="2019-06-19T17:42:30+08:00">2019年6月19日 下午5:42</time></a>					</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>这科普写得太好了 XD</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="https://vcb-s.com/wp-login.php?redirect_to=https%3A%2F%2Fvcb-s.com%2Farchives%2F4567">登录以回复</a></div>			</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+		<li id="comment-18564" class="comment byuser comment-author-darkteeth even thread-even depth-1 parent">
+			<article id="div-comment-18564" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img data-del="avatar" src='https://vcb-s.com/wp-content/uploads/2020/09/avatar.png' class='avatar pp-user-avatar avatar-70 photo ' height='70' width='70'/>						<b class="fn">Dmou</b><span class="says">说道：</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://vcb-s.com/archives/4567/comment-page-3#comment-18564"><time datetime="2018-06-05T13:21:02+08:00">2018年6月5日 下午1:21</time></a>					</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>萌新日常补课.jpg<br />
+看完我觉得，还是努力挣钱买BD和播放机比较妥当&#8230;</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="https://vcb-s.com/wp-login.php?redirect_to=https%3A%2F%2Fvcb-s.com%2Farchives%2F4567">登录以回复</a></div>			</article><!-- .comment-body -->
+		<ol class="children">
+		<li id="comment-18571" class="comment byuser comment-author-tzw0745 odd alt depth-2">
+			<article id="div-comment-18571" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg' srcset='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg 2x' class='avatar avatar-70 photo' height='70' width='70' loading='lazy' decoding='async'/>						<b class="fn">tzw0745</b><span class="says">说道：</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://vcb-s.com/archives/4567/comment-page-3#comment-18571"><time datetime="2018-06-06T16:09:56+08:00">2018年6月6日 下午4:09</time></a>					</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>播放器不是问题，xbox妥妥的。只是BD就比较尴尬了，贵，而且不好买。</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="https://vcb-s.com/wp-login.php?redirect_to=https%3A%2F%2Fvcb-s.com%2Farchives%2F4567">登录以回复</a></div>			</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+		<li id="comment-17971" class="comment byuser comment-author-6506 even thread-odd thread-alt depth-1">
+			<article id="div-comment-17971" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg' srcset='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg 2x' class='avatar avatar-70 photo' height='70' width='70' loading='lazy' decoding='async'/>						<b class="fn">东方妖道</b><span class="says">说道：</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://vcb-s.com/archives/4567/comment-page-3#comment-17971"><time datetime="2018-03-27T01:03:09+08:00">2018年3月27日 上午1:03</time></a>					</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>学习了</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="https://vcb-s.com/wp-login.php?redirect_to=https%3A%2F%2Fvcb-s.com%2Farchives%2F4567">登录以回复</a></div>			</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+		<li id="comment-16822" class="comment byuser comment-author-5707 odd alt thread-even depth-1 parent">
+			<article id="div-comment-16822" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg' srcset='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg 2x' class='avatar avatar-70 photo' height='70' width='70' loading='lazy' decoding='async'/>						<b class="fn">半叶</b><span class="says">说道：</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://vcb-s.com/archives/4567/comment-page-3#comment-16822"><time datetime="2017-12-05T09:16:29+08:00">2017年12月5日 上午9:16</time></a>					</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>第三课有网页版吗？就是VCB-S 开放课程里Dark Shrine文件夹内的《教程03 基础工具的安装和调试》，虽然有下载docx和pdf版，不过感觉网页版可能有更新（比如《教程00 视频格式基础知识》网页版就比Word版多了「8、清晰度与画质简述」），而且网页版可以看评论里的讨论。（顺便如果教程是网页版的话我会复制到Word文档里慢慢看，以免贴子突然被和谐什么的，如果是Word版我又来找网页版，以免有更新的内容，咱真是一个对立而又统一的矛盾综合体啊。是说，有可以下载到本地的docx版真是太好了，千万不要取消了这个方便的功能，但我还是想找网页版_(:з」∠)_）还有这些教程是文字版真是太好了，如果是视频版不仅体积大而且不方便前后翻页对比来看，而且搞不好还会因为专业术语太多听不懂授课教程说什么。</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="https://vcb-s.com/wp-login.php?redirect_to=https%3A%2F%2Fvcb-s.com%2Farchives%2F4567">登录以回复</a></div>			</article><!-- .comment-body -->
+		<ol class="children">
+		<li id="comment-16823" class="comment byuser comment-author-5707 even depth-2">
+			<article id="div-comment-16823" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg' srcset='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg 2x' class='avatar avatar-70 photo' height='70' width='70' loading='lazy' decoding='async'/>						<b class="fn">半叶</b><span class="says">说道：</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://vcb-s.com/archives/4567/comment-page-3#comment-16823"><time datetime="2017-12-05T10:21:09+08:00">2017年12月5日 上午10:21</time></a>					</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>翻完了49页居然都没有找到第三课，只能看docx了（残念），如果有人知道网页版地址的话请务必回复我（泣）</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="https://vcb-s.com/wp-login.php?redirect_to=https%3A%2F%2Fvcb-s.com%2Farchives%2F4567">登录以回复</a></div>			</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+		<li id="comment-16820" class="comment byuser comment-author-5707 odd alt thread-odd thread-alt depth-1">
+			<article id="div-comment-16820" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg' srcset='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg 2x' class='avatar avatar-70 photo' height='70' width='70' loading='lazy' decoding='async'/>						<b class="fn">半叶</b><span class="says">说道：</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://vcb-s.com/archives/4567/comment-page-3#comment-16820"><time datetime="2017-12-04T21:54:21+08:00">2017年12月4日 下午9:54</time></a>					</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>我不能确定到现在madVR是否依然是最完美的渲染器，不过这是我见过最完美的教程！！能有这么详细的教程真是太满足了，赞美作者，感谢！</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="https://vcb-s.com/wp-login.php?redirect_to=https%3A%2F%2Fvcb-s.com%2Farchives%2F4567">登录以回复</a></div>			</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+		<li id="comment-14787" class="comment even thread-even depth-1">
+			<article id="div-comment-14787" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg' srcset='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg 2x' class='avatar avatar-70 photo' height='70' width='70' loading='lazy' decoding='async'/>						<b class="fn"><a href="http://t.qq.com/l68kingmu" class="url" rel="ugc external nofollow">茫茫</a></b><span class="says">说道：</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://vcb-s.com/archives/4567/comment-page-3#comment-14787"><time datetime="2017-03-11T21:34:34+08:00">2017年3月11日 下午9:34</time></a>					</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>新版完美解码2017貌似把XySubFilter和SVP给取消了？</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="https://vcb-s.com/wp-login.php?redirect_to=https%3A%2F%2Fvcb-s.com%2Farchives%2F4567">登录以回复</a></div>			</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+		<li id="comment-14786" class="comment odd alt thread-odd thread-alt depth-1">
+			<article id="div-comment-14786" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg' srcset='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg 2x' class='avatar avatar-70 photo' height='70' width='70' loading='lazy' decoding='async'/>						<b class="fn"><a href="http://t.qq.com/l68kingmu" class="url" rel="ugc external nofollow">茫茫</a></b><span class="says">说道：</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://vcb-s.com/archives/4567/comment-page-3#comment-14786"><time datetime="2017-03-11T21:29:03+08:00">2017年3月11日 下午9:29</time></a>					</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>以前都是nv12输出，现在把8BIT只留下RGB32 RGB24，输出就变P010了，这样正常不正常？</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="https://vcb-s.com/wp-login.php?redirect_to=https%3A%2F%2Fvcb-s.com%2Farchives%2F4567">登录以回复</a></div>			</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+		<li id="comment-14276" class="comment byuser comment-author-vernalwind even thread-even depth-1 parent">
+			<article id="div-comment-14276" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg' srcset='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg 2x' class='avatar avatar-70 photo' height='70' width='70' loading='lazy' decoding='async'/>						<b class="fn">vernalwind</b><span class="says">说道：</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://vcb-s.com/archives/4567/comment-page-3#comment-14276"><time datetime="2016-11-22T20:26:45+08:00">2016年11月22日 下午8:26</time></a>					</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>请问potplayer的显示器色域校正是什么原理啊= =</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="https://vcb-s.com/wp-login.php?redirect_to=https%3A%2F%2Fvcb-s.com%2Farchives%2F4567">登录以回复</a></div>			</article><!-- .comment-body -->
+		<ol class="children">
+		<li id="comment-14717" class="comment odd alt depth-2">
+			<article id="div-comment-14717" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg' srcset='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg 2x' class='avatar avatar-70 photo' height='70' width='70' loading='lazy' decoding='async'/>						<b class="fn">肥勤</b><span class="says">说道：</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://vcb-s.com/archives/4567/comment-page-3#comment-14717"><time datetime="2017-02-22T23:52:54+08:00">2017年2月22日 下午11:52</time></a>					</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>potplayer没有校色手段，校色由校色仪完成。pot是正确加载校色文件madvr高级点加载单独制作的3dlut。原理这个要问校色仪。</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="https://vcb-s.com/wp-login.php?redirect_to=https%3A%2F%2Fvcb-s.com%2Farchives%2F4567">登录以回复</a></div>			</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+		<li id="comment-11479" class="comment byuser comment-author-rx0unicorn even thread-odd thread-alt depth-1 parent">
+			<article id="div-comment-11479" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg' srcset='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg 2x' class='avatar avatar-70 photo' height='70' width='70' loading='lazy' decoding='async'/>						<b class="fn">RX0UNICORN</b><span class="says">说道：</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://vcb-s.com/archives/4567/comment-page-3#comment-11479"><time datetime="2016-04-06T18:32:26+08:00">2016年4月6日 下午6:32</time></a>					</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>您是说现在大多数的蓝光原盘内的视频不是 以每秒24张(或30之类的？)无损bmp图像的形式存储，而是编码成了yuv420之类的有损图像存储的？</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="https://vcb-s.com/wp-login.php?redirect_to=https%3A%2F%2Fvcb-s.com%2Farchives%2F4567">登录以回复</a></div>			</article><!-- .comment-body -->
+		<ol class="children">
+		<li id="comment-11480" class="comment byuser comment-author-littlepox bypostauthor odd alt depth-2 parent">
+			<article id="div-comment-11480" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img data-del="avatar" src='https://vcb-s.com/wp-content/uploads/2015/06/lp.jpg' class='avatar pp-user-avatar avatar-70 photo ' height='70' width='70'/>						<b class="fn"><a href="http://www.baidu.com/p/LittlePox" class="url" rel="ugc external nofollow">LittlePox</a></b><span class="says">说道：</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://vcb-s.com/archives/4567/comment-page-3#comment-11480"><time datetime="2016-04-06T18:43:51+08:00">2016年4月6日 下午6:43</time></a>					</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>不是大多数，是全部。</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="https://vcb-s.com/wp-login.php?redirect_to=https%3A%2F%2Fvcb-s.com%2Farchives%2F4567">登录以回复</a></div>			</article><!-- .comment-body -->
+		<ol class="children">
+		<li id="comment-11481" class="comment byuser comment-author-rx0unicorn even depth-3 parent">
+			<article id="div-comment-11481" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg' srcset='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg 2x' class='avatar avatar-70 photo' height='70' width='70' loading='lazy' decoding='async'/>						<b class="fn">RX0UNICORN</b><span class="says">说道：</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://vcb-s.com/archives/4567/comment-page-3#comment-11481"><time datetime="2016-04-06T18:59:27+08:00">2016年4月6日 下午6:59</time></a>					</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>可怕。。我还以为蓝光原盘是无损的。。。谢谢大佬科普</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="https://vcb-s.com/wp-login.php?redirect_to=https%3A%2F%2Fvcb-s.com%2Farchives%2F4567">登录以回复</a></div>			</article><!-- .comment-body -->
+		<ol class="children">
+		<li id="comment-11482" class="comment byuser comment-author-devilmaycry odd alt depth-4 parent">
+			<article id="div-comment-11482" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img data-del="avatar" src='https://vcb-s.com/wp-content/uploads/2022/08/tb.1.1965040d.jpg' class='avatar pp-user-avatar avatar-70 photo ' height='70' width='70'/>						<b class="fn"><a href="http://hi.baidu.com/凡人依旧爱红颜" class="url" rel="ugc external nofollow">凡人依旧爱红颜</a></b><span class="says">说道：</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://vcb-s.com/archives/4567/comment-page-3#comment-11482"><time datetime="2016-04-06T19:17:18+08:00">2016年4月6日 下午7:17</time></a>					</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>你可以手动算算那个体积有多大。</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="https://vcb-s.com/wp-login.php?redirect_to=https%3A%2F%2Fvcb-s.com%2Farchives%2F4567">登录以回复</a></div>			</article><!-- .comment-body -->
+		<ol class="children">
+		<li id="comment-11483" class="comment byuser comment-author-rx0unicorn even depth-5 parent">
+			<article id="div-comment-11483" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg' srcset='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg 2x' class='avatar avatar-70 photo' height='70' width='70' loading='lazy' decoding='async'/>						<b class="fn">RX0UNICORN</b><span class="says">说道：</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://vcb-s.com/archives/4567/comment-page-3#comment-11483"><time datetime="2016-04-06T19:39:22+08:00">2016年4月6日 下午7:39</time></a>					</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>。。噫，我看到LP大神在某贴吧的回复了，1T大概是1080p 30帧 5.75秒。之前没算过，我傻逼了</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="https://vcb-s.com/wp-login.php?redirect_to=https%3A%2F%2Fvcb-s.com%2Farchives%2F4567">登录以回复</a></div>			</article><!-- .comment-body -->
+		<ol class="children">
+		<li id="comment-14716" class="comment odd alt depth-6">
+			<article id="div-comment-14716" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg' srcset='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg 2x' class='avatar avatar-70 photo' height='70' width='70' loading='lazy' decoding='async'/>						<b class="fn"><a href="http://weibo.com/5381845481" class="url" rel="ugc external nofollow">克利普</a></b><span class="says">说道：</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://vcb-s.com/archives/4567/comment-page-3#comment-14716"><time datetime="2017-02-22T22:27:14+08:00">2017年2月22日 下午10:27</time></a>					</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>我算了一下，1920*1080p分辨率下，8位色深下，每分钟10678MB，挺占空间的</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="https://vcb-s.com/wp-login.php?redirect_to=https%3A%2F%2Fvcb-s.com%2Farchives%2F4567">登录以回复</a></div>			</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+		<li id="comment-11484" class="comment byuser comment-author-rx0unicorn even depth-3 parent">
+			<article id="div-comment-11484" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg' srcset='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg 2x' class='avatar avatar-70 photo' height='70' width='70' loading='lazy' decoding='async'/>						<b class="fn">RX0UNICORN</b><span class="says">说道：</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://vcb-s.com/archives/4567/comment-page-3#comment-11484"><time datetime="2016-04-06T19:54:19+08:00">2016年4月6日 下午7:54</time></a>					</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>另外想请问一下 高达独角兽 的BDMV质量如何？我已经下了。如果不行的话请问有没有推荐的压制作品？</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="https://vcb-s.com/wp-login.php?redirect_to=https%3A%2F%2Fvcb-s.com%2Farchives%2F4567">登录以回复</a></div>			</article><!-- .comment-body -->
+		<ol class="children">
+		<li id="comment-11486" class="comment byuser comment-author-kavenliang odd alt depth-4 parent">
+			<article id="div-comment-11486" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg' srcset='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg 2x' class='avatar avatar-70 photo' height='70' width='70' loading='lazy' decoding='async'/>						<b class="fn"><a href="http://weibo.com/1762556160" class="url" rel="ugc external nofollow">Kevin_L梁</a></b><span class="says">说道：</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://vcb-s.com/archives/4567/comment-page-3#comment-11486"><time datetime="2016-04-06T21:52:50+08:00">2016年4月6日 下午9:52</time></a>					</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>求推荐需要积分。</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="https://vcb-s.com/wp-login.php?redirect_to=https%3A%2F%2Fvcb-s.com%2Farchives%2F4567">登录以回复</a></div>			</article><!-- .comment-body -->
+		<ol class="children">
+		<li id="comment-11492" class="comment byuser comment-author-rx0unicorn even depth-5 parent">
+			<article id="div-comment-11492" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg' srcset='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg 2x' class='avatar avatar-70 photo' height='70' width='70' loading='lazy' decoding='async'/>						<b class="fn">RX0UNICORN</b><span class="says">说道：</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://vcb-s.com/archives/4567/comment-page-3#comment-11492"><time datetime="2016-04-07T10:28:13+08:00">2016年4月7日 上午10:28</time></a>					</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>积分怎么获得？又应该到哪里求推荐呢？</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="https://vcb-s.com/wp-login.php?redirect_to=https%3A%2F%2Fvcb-s.com%2Farchives%2F4567">登录以回复</a></div>			</article><!-- .comment-body -->
+		<ol class="children">
+		<li id="comment-11493" class="comment byuser comment-author-littlepox bypostauthor odd alt depth-6">
+			<article id="div-comment-11493" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img data-del="avatar" src='https://vcb-s.com/wp-content/uploads/2015/06/lp.jpg' class='avatar pp-user-avatar avatar-70 photo ' height='70' width='70'/>						<b class="fn"><a href="http://www.baidu.com/p/LittlePox" class="url" rel="ugc external nofollow">LittlePox</a></b><span class="says">说道：</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://vcb-s.com/archives/4567/comment-page-3#comment-11493"><time datetime="2016-04-07T11:38:08+08:00">2016年4月7日 上午11:38</time></a>					</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p><a href="http://vcb-s.com/archives/4106" rel="ugc">http://vcb-s.com/archives/4106</a></p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="https://vcb-s.com/wp-login.php?redirect_to=https%3A%2F%2Fvcb-s.com%2Farchives%2F4567">登录以回复</a></div>			</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+		<li id="comment-11247" class="comment even thread-even depth-1 parent">
+			<article id="div-comment-11247" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg' srcset='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg 2x' class='avatar avatar-70 photo' height='70' width='70' loading='lazy' decoding='async'/>						<b class="fn"><a href="http://weibo.com/1099246262" class="url" rel="ugc external nofollow">暗物质奇校長</a></b><span class="says">说道：</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://vcb-s.com/archives/4567/comment-page-3#comment-11247"><time datetime="2016-03-17T21:19:42+08:00">2016年3月17日 下午9:19</time></a>					</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>现在的pot自带字幕处理已经抛出XySubFilter几条街。</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="https://vcb-s.com/wp-login.php?redirect_to=https%3A%2F%2Fvcb-s.com%2Farchives%2F4567">登录以回复</a></div>			</article><!-- .comment-body -->
+		<ol class="children">
+		<li id="comment-11250" class="comment byuser comment-author-kavenliang odd alt depth-2">
+			<article id="div-comment-11250" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg' srcset='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg 2x' class='avatar avatar-70 photo' height='70' width='70' loading='lazy' decoding='async'/>						<b class="fn"><a href="http://weibo.com/1762556160" class="url" rel="ugc external nofollow">Kevin_L梁</a></b><span class="says">说道：</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://vcb-s.com/archives/4567/comment-page-3#comment-11250"><time datetime="2016-03-17T22:54:03+08:00">2016年3月17日 下午10:54</time></a>					</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>如果你是说32位的话。</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="https://vcb-s.com/wp-login.php?redirect_to=https%3A%2F%2Fvcb-s.com%2Farchives%2F4567">登录以回复</a></div>			</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+		<li id="comment-11252" class="comment byuser comment-author-w-z even depth-2">
+			<article id="div-comment-11252" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg' srcset='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg 2x' class='avatar avatar-70 photo' height='70' width='70' loading='lazy' decoding='async'/>						<b class="fn"><a href="http://www.baidu.com/p/wzwenyuyu" class="url" rel="ugc external nofollow">wzwenyuyu</a></b><span class="says">说道：</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://vcb-s.com/archives/4567/comment-page-3#comment-11252"><time datetime="2016-03-17T23:48:58+08:00">2016年3月17日 下午11:48</time></a>					</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>我听说过最好笑的笑话之一就是pot自带的东西好用……</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="https://vcb-s.com/wp-login.php?redirect_to=https%3A%2F%2Fvcb-s.com%2Farchives%2F4567">登录以回复</a></div>			</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+		<li id="comment-10645" class="comment byuser comment-author-besta9188 odd alt thread-odd thread-alt depth-1 parent">
+			<article id="div-comment-10645" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg' srcset='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg 2x' class='avatar avatar-70 photo' height='70' width='70' loading='lazy' decoding='async'/>						<b class="fn">besta9188</b><span class="says">说道：</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://vcb-s.com/archives/4567/comment-page-3#comment-10645"><time datetime="2016-01-20T00:10:28+08:00">2016年1月20日 上午12:10</time></a>					</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>LP大有没有考虑过开一个介绍MPV的坑？感觉这个播放器里面门道很深，但是完全看不懂官方的manual……</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="https://vcb-s.com/wp-login.php?redirect_to=https%3A%2F%2Fvcb-s.com%2Farchives%2F4567">登录以回复</a></div>			</article><!-- .comment-body -->
+		<ol class="children">
+		<li id="comment-10647" class="comment even depth-2">
+			<article id="div-comment-10647" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg' srcset='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg 2x' class='avatar avatar-70 photo' height='70' width='70' loading='lazy' decoding='async'/>						<b class="fn"><a href="http://t.qq.com/mlgc123" class="url" rel="ugc external nofollow">枯sssss</a></b><span class="says">说道：</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://vcb-s.com/archives/4567/comment-page-3#comment-10647"><time datetime="2016-01-20T11:01:21+08:00">2016年1月20日 上午11:01</time></a>					</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p><a href="http://bbs.vcb-s.com/forum.php?mod=viewthread&#038;tid=1009&#038;highlight=mpv" rel="nofollow ugc">http://bbs.vcb-s.com/forum.php?mod=viewthread&#038;tid=1009&#038;highlight=mpv</a></p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="https://vcb-s.com/wp-login.php?redirect_to=https%3A%2F%2Fvcb-s.com%2Farchives%2F4567">登录以回复</a></div>			</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+		<li id="comment-10287" class="comment byuser comment-author-river1 odd alt thread-even depth-1">
+			<article id="div-comment-10287" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg' srcset='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg 2x' class='avatar avatar-70 photo' height='70' width='70' loading='lazy' decoding='async'/>						<b class="fn">river1</b><span class="says">说道：</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://vcb-s.com/archives/4567/comment-page-3#comment-10287"><time datetime="2015-12-22T22:52:38+08:00">2015年12月22日 下午10:52</time></a>					</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>写得好详细，国内应该找不到第二篇这么详细的教程了<br />
+另外关于reclock：<br />
+其实reclock的出现其实是因为PC的显卡输出的刷新频率并不能准确的设置。对于23.976fps的视频显卡没法以准确的23.976Hz的刷新率输出给电视，N卡的刷新率大概会在23.967左右，于是视频比音频略慢一点，最后导致每隔几十秒钟丢一帧，非常恼人。所以有一群人想出了对音频重采样加速的办法，reclock就是这个目的。<br />
+当然很多人觉得自己并没有体验过每隔几十秒顿一下的感觉，那是因为你的显卡输出60Hz，24p的视频已经通过2:3下拉本身就加入了很多重复帧，没有原始的24p那么流畅。<br />
+所以总结一下，对于不是用24p的电视或投影，并且也不用SVP的同学，reclock完全没用意义。<br />
+P.S. 最近我发现有个叫做Custom Resolution Utility (CRU)的软件可以较精确的设定显卡输出的刷新率，某些情况下的效果可以取代reclock</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="https://vcb-s.com/wp-login.php?redirect_to=https%3A%2F%2Fvcb-s.com%2Farchives%2F4567">登录以回复</a></div>			</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+		<li id="comment-10244" class="comment even thread-odd thread-alt depth-1 parent">
+			<article id="div-comment-10244" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg' srcset='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg 2x' class='avatar avatar-70 photo' height='70' width='70' loading='lazy' decoding='async'/>						<b class="fn"><a href="http://t.qq.com/paul113" class="url" rel="ugc external nofollow">佳顿威化饼</a></b><span class="says">说道：</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://vcb-s.com/archives/4567/comment-page-3#comment-10244"><time datetime="2015-12-21T11:02:00+08:00">2015年12月21日 上午11:02</time></a>					</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>按网上的教程http://www.hd.club.tw/thread-124742-1-1.html折腾了SVP 3.1.7后，发现开启SVP必须使用ffdshow raw video filter滤镜，虽然视频信息上看还是用的LAV+MADVR，请问这里使用ffdshow会不会降低精度+瞎转换？</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="https://vcb-s.com/wp-login.php?redirect_to=https%3A%2F%2Fvcb-s.com%2Farchives%2F4567">登录以回复</a></div>			</article><!-- .comment-body -->
+		<ol class="children">
+		<li id="comment-10246" class="comment byuser comment-author-admin odd alt depth-2 parent">
+			<article id="div-comment-10246" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg' srcset='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg 2x' class='avatar avatar-70 photo' height='70' width='70' loading='lazy' decoding='async'/>						<b class="fn"><a href="http://www.baidu.com/p/cswsad" class="url" rel="ugc external nofollow">Stovepoker</a></b><span class="says">说道：</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://vcb-s.com/archives/4567/comment-page-3#comment-10246"><time datetime="2015-12-21T13:11:57+08:00">2015年12月21日 下午1:11</time></a>					</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>现在的svp用的ffdshow的raw滤镜，解码还是交给LAV的，默认情况下，ffdshow只是走个流程，不会乱搞格式，虽然ffdshow支持的格式没lav那么多，但是4:2:0的基本上都没问题</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="https://vcb-s.com/wp-login.php?redirect_to=https%3A%2F%2Fvcb-s.com%2Farchives%2F4567">登录以回复</a></div>			</article><!-- .comment-body -->
+		<ol class="children">
+		<li id="comment-10248" class="comment byuser comment-author-echorish even depth-3">
+			<article id="div-comment-10248" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img data-del="avatar" src='https://vcb-s.com/wp-content/uploads/2015/03/吉他小人.jpg' class='avatar pp-user-avatar avatar-70 photo ' height='70' width='70'/>						<b class="fn">Echorish</b><span class="says">说道：</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://vcb-s.com/archives/4567/comment-page-3#comment-10248"><time datetime="2015-12-21T13:58:51+08:00">2015年12月21日 下午1:58</time></a>					</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>lav解码后，经过ffdshow的raw滤镜，也变成了8bit数据了吧……这精度就下降了……</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="https://vcb-s.com/wp-login.php?redirect_to=https%3A%2F%2Fvcb-s.com%2Farchives%2F4567">登录以回复</a></div>			</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+		<li id="comment-10266" class="comment odd alt depth-3">
+			<article id="div-comment-10266" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg' srcset='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg 2x' class='avatar avatar-70 photo' height='70' width='70' loading='lazy' decoding='async'/>						<b class="fn"><a href="http://t.qq.com/paul113" class="url" rel="ugc external nofollow">佳顿威化饼</a></b><span class="says">说道：</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://vcb-s.com/archives/4567/comment-page-3#comment-10266"><time datetime="2015-12-22T10:46:54+08:00">2015年12月22日 上午10:46</time></a>					</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>那就好，谢谢解答</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="https://vcb-s.com/wp-login.php?redirect_to=https%3A%2F%2Fvcb-s.com%2Farchives%2F4567">登录以回复</a></div>			</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+		<li id="comment-10421" class="comment even depth-3 parent">
+			<article id="div-comment-10421" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg' srcset='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg 2x' class='avatar avatar-70 photo' height='70' width='70' loading='lazy' decoding='async'/>						<b class="fn"><a href="http://t.qq.com/paul113" class="url" rel="ugc external nofollow">佳顿威化饼</a></b><span class="says">说道：</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://vcb-s.com/archives/4567/comment-page-3#comment-10421"><time datetime="2016-01-03T12:50:57+08:00">2016年1月3日 下午12:50</time></a>					</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>今天折腾了半天后发现，开启svp所必需的ffdshow确实会强制降低LAV的输出精度，我在播放VCB的心理测量者2时发现输出从原先的P010,10bit变成nv12，8bit，关闭ffdshow后恢复原样。若强制在LAV中设置10bit输出，则输出会变成P416,16bit。莫非是我设置有误？</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="https://vcb-s.com/wp-login.php?redirect_to=https%3A%2F%2Fvcb-s.com%2Farchives%2F4567">登录以回复</a></div>			</article><!-- .comment-body -->
+		<ol class="children">
+		<li id="comment-10620" class="comment byuser comment-author-littlepox bypostauthor odd alt depth-4 parent">
+			<article id="div-comment-10620" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img data-del="avatar" src='https://vcb-s.com/wp-content/uploads/2015/06/lp.jpg' class='avatar pp-user-avatar avatar-70 photo ' height='70' width='70'/>						<b class="fn"><a href="http://www.baidu.com/p/LittlePox" class="url" rel="ugc external nofollow">LittlePox</a></b><span class="says">说道：</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://vcb-s.com/archives/4567/comment-page-3#comment-10620"><time datetime="2016-01-16T18:19:16+08:00">2016年1月16日 下午6:19</time></a>					</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>仔细看我上文，SVP只能支持YUV420 8bit输入输出。</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="https://vcb-s.com/wp-login.php?redirect_to=https%3A%2F%2Fvcb-s.com%2Farchives%2F4567">登录以回复</a></div>			</article><!-- .comment-body -->
+		<ol class="children">
+		<li id="comment-10772" class="comment even depth-5">
+			<article id="div-comment-10772" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg' srcset='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg 2x' class='avatar avatar-70 photo' height='70' width='70' loading='lazy' decoding='async'/>						<b class="fn"><a href="http://t.qq.com/paul113" class="url" rel="ugc external nofollow">佳顿威化饼</a></b><span class="says">说道：</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://vcb-s.com/archives/4567/comment-page-3#comment-10772"><time datetime="2016-02-02T00:54:47+08:00">2016年2月2日 上午12:54</time></a>					</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>[泪]是在下没看仔细……[衰][囧]</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel="nofollow" class="comment-reply-login" href="https://vcb-s.com/wp-login.php?redirect_to=https%3A%2F%2Fvcb-s.com%2Farchives%2F4567">登录以回复</a></div>			</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+        </ol>
+                <nav id="comment-nav" class="clearfix">
+          <div class='pagination pagination-zan pull-right'>
+            <a class="prev page-numbers" href="https://vcb-s.com/archives/4567/comment-page-2#comments">«</a>
+<a class="page-numbers" href="https://vcb-s.com/archives/4567/comment-page-1#comments">1</a>
+<a class="page-numbers" href="https://vcb-s.com/archives/4567/comment-page-2#comments">2</a>
+<span aria-current="page" class="page-numbers current">3</span>          </div>
+        </nav>
+                  </div>
+    	<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title"><i class="fa fa-pencil"></i> 欢迎留言 <small><a rel="nofollow" id="cancel-comment-reply-link" href="/archives/4567#respond" style="display:none;">取消回复</a></small></h3><p class="must-log-in">要发表评论，您必须先<a href="https://vcb-s.com/wp-login.php?redirect_to=https%3A%2F%2Fvcb-s.com%2Farchives%2F4567">登录</a>。</p>	</div><!-- #respond -->
+	<p class="akismet_comment_form_privacy_notice">这个站点使用 Akismet 来减少垃圾评论。<a href="https://akismet.com/privacy/" target="_blank" rel="nofollow noopener">了解你的评论数据如何被处理</a>。</p>    <div id="smilelink" inori-data='f?'>
+      <a onclick="javascript:grin(':?:')"><img src="https://vcb-s.com/wp-includes/images/smilies/icon_question.gif" title="汗" alt="汗" /></a>
+      <a onclick="javascript:grin(':razz:')"><img src="https://vcb-s.com/wp-includes/images/smilies/icon_razz.gif" title="色" alt="色" /></a>
+      <a onclick="javascript:grin(':sad:')"><img src="https://vcb-s.com/wp-includes/images/smilies/icon_sad.gif" title="悲" alt="悲" /></a>
+      <a onclick="javascript:grin(':evil:')"><img src="https://vcb-s.com/wp-includes/images/smilies/icon_evil.gif" title="闭嘴" alt="闭嘴" /></a>
+      <a onclick="javascript:grin(':!:')"><img src="https://vcb-s.com/wp-includes/images/smilies/icon_exclaim.gif" title="调皮" alt="调皮" /></a>
+      <a onclick="javascript:grin(':smile:')"><img src="https://vcb-s.com/wp-includes/images/smilies/icon_smile.gif" title="笑" alt="笑" /></a>
+      <a onclick="javascript:grin(':oops:')"><img src="https://vcb-s.com/wp-includes/images/smilies/icon_redface.gif" title="惊" alt="惊" /></a>
+      <a onclick="javascript:grin(':grin:')"><img src="https://vcb-s.com/wp-includes/images/smilies/icon_biggrin.gif" title="亲" alt="亲" /></a>
+      <a onclick="javascript:grin(':shock:')"><img src="https://vcb-s.com/wp-includes/images/smilies/icon_eek.gif" title="馋" alt="馋" /></a>
+      <a onclick="javascript:grin(':???:')"><img src="https://vcb-s.com/wp-includes/images/smilies/icon_confused.gif" title="晕" alt="晕" /></a>
+      <a onclick="javascript:grin(':cool:')"><img src="https://vcb-s.com/wp-includes/images/smilies/icon_cool.gif" title="酷" alt="酷" /></a>
+      <a onclick="javascript:grin(':lol:')"><img src="https://vcb-s.com/wp-includes/images/smilies/icon_lol.gif" title="奸" alt="奸" /></a>
+      <a onclick="javascript:grin(':mad:')"><img src="https://vcb-s.com/wp-includes/images/smilies/icon_mad.gif" title="怒" alt="怒" /></a>
+      <a onclick="javascript:grin(':twisted:')"><img src="https://vcb-s.com/wp-includes/images/smilies/icon_twisted.gif" title="狂" alt="狂" /></a>
+      <a onclick="javascript:grin(':roll:')"><img src="https://vcb-s.com/wp-includes/images/smilies/icon_rolleyes.gif" title="萌" alt="萌" /></a>
+      <a onclick="javascript:grin(':wink:')"><img src="https://vcb-s.com/wp-includes/images/smilies/icon_wink.gif" title="吃" alt="吃" /></a>
+      <a onclick="javascript:grin(':idea:')"><img src="https://vcb-s.com/wp-includes/images/smilies/icon_idea.gif" title="贪" alt="贪" /></a>
+      <a onclick="javascript:grin(':arrow:')"><img src="https://vcb-s.com/wp-includes/images/smilies/icon_arrow.gif" title="囧" alt="囧" /></a>
+      <a onclick="javascript:grin(':neutral:')"><img src="https://vcb-s.com/wp-includes/images/smilies/icon_neutral.gif" title="羞" alt="羞" /></a>
+      <a onclick="javascript:grin(':cry:')"><img src="https://vcb-s.com/wp-includes/images/smilies/icon_cry.gif" title="哭" alt="哭" /></a>
+      <a onclick="javascript:grin(':mrgreen:')"><img src="https://vcb-s.com/wp-includes/images/smilies/icon_mrgreen.gif" title="嘿" alt="嘿" /></a>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" language="javascript">
+/* <![CDATA[ */
+  var smiley  = jQuery( "#smilelink" );
+      clone   = smiley.clone();
+      comment = jQuery( "#comment" );
+
+  smiley.remove();
+  comment.before( smiley );
+
+  function grin(tag) {
+    var myField;
+    tag = ' ' + tag + ' ';
+      if ( document.getElementById( 'comment' ) && document.getElementById( 'comment' ).type == 'textarea' ) {
+      myField = document.getElementById( 'comment' );
+    } else {
+      return false;
+    }
+    if (document.selection) {
+      myField.focus();
+      sel = document.selection.createRange();
+      sel.text = tag;
+      myField.focus();
+    }
+    else if ( myField.selectionStart || myField.selectionStart == '0' ) {
+      var startPos = myField.selectionStart;
+      var endPos = myField.selectionEnd;
+      var cursorPos = endPos;
+      myField.value = myField.value.substring(0, startPos)
+              + tag
+              + myField.value.substring( endPos, myField.value.length );
+      cursorPos += tag.length;
+      myField.focus();
+      myField.selectionStart = cursorPos;
+      myField.selectionEnd = cursorPos;
+    }
+    else {
+      myField.value += tag;
+      myField.focus();
+    }
+  }
+/* ]]> */
+</script>
+ 									
+			</div>
+			<aside class="col-md-4" id="sidebar">
+  <aside id="zan_search-8">      <div class="search">
+         <form class="form-inline clearfix" method="get" id="searchform" action="https://vcb-s.com">
+            <input class="form-control" type="text" name="s" id="s" placeholder="搜索..." />
+            <button type="submit" class="btn btn-danger btn-small" name="submit" ><i class="fa fa-search"></i></button>
+         </form>
+      </div>
+    </aside><aside id="zan_login-7">        <div class="panel panel-zan">
+      <div class="panel-heading">请登录</div>
+      <form class="login-form clearfix" action="https://vcb-s.com/wp-login.php" method="post">
+        <div class="form-group">
+          <div class="input-group">
+            <div class="input-group-addon"><i class="fa fa-user"></i></div>
+            <input class="form-control" type="text" name="log" id="log" value="" size="20" />
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="input-group">
+            <div class="input-group-addon"><i class="fa fa-lock"></i></div>
+            <input class="form-control" type="password" name="pwd" id="pwd" size="20" />
+          </div>
+        </div>
+        <div style='display: none;'>
+          <input name="rememberme" type="checkbox" id="rememberme" value="forever" />
+        </div>
+        <button class="btn btn-inverse-primary pull-left" type="submit" name="submit">登录</button>
+        <a href="https://vcb-s.com/wp-login.php?action=register" class="btn btn-inverse-primary pull-right">注册</a>
+      </form>
+    </div>
+        </aside><aside id="zan_latest_comments-6">
+      <div class="panel panel-zan hidden-xs">
+        <div class="panel-heading">
+          <i class="fa fa-comments"></i> 最新评论          <i class="fa fa-times-circle panel-remove"></i>
+          <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush">
+                      <li class="list-group-item">
+              <span class="author-avatar"><img alt='' src='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg' srcset='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg 2x' class='avatar avatar-40 photo' height='40' width='40' loading='lazy' decoding='async'/></span>
+              <span class="comment-log">
+                <a href="https://vcb-s.com/contact/comment-page-71#comment-38461">
+                  https://vcb-s.com/archives/5047/comment-page-1
+请问大大，解压密码是多少？好...                </a>
+              </span>
+            </li>
+                      <li class="list-group-item">
+              <span class="author-avatar"><img alt='' src='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg' srcset='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg 2x' class='avatar avatar-40 photo' height='40' width='40' loading='lazy' decoding='async'/></span>
+              <span class="comment-log">
+                <a href="https://vcb-s.com/archives/10563/comment-page-1#comment-38460">
+                  回复给 椎名玖奈: 原因可能是半角符号“&lt;”和“&gt;”引起的转义问题（这俩符号中间...                </a>
+              </span>
+            </li>
+                      <li class="list-group-item">
+              <span class="author-avatar"><img alt='' src='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg' srcset='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg 2x' class='avatar avatar-40 photo' height='40' width='40' loading='lazy' decoding='async'/></span>
+              <span class="comment-log">
+                <a href="https://vcb-s.com/archives/7228/comment-page-24#comment-38459">
+                  回复给 mio: 感谢各位大佬回复，网上能找到的方法都试过了，只有把mkv的音轨通过软...                </a>
+              </span>
+            </li>
+                      <li class="list-group-item">
+              <span class="author-avatar"><img alt='' src='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg' srcset='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg 2x' class='avatar avatar-40 photo' height='40' width='40' loading='lazy' decoding='async'/></span>
+              <span class="comment-log">
+                <a href="https://vcb-s.com/archives/20922/comment-page-1#comment-38458">
+                  请问是没有中配音轨吗？                </a>
+              </span>
+            </li>
+                      <li class="list-group-item">
+              <span class="author-avatar"><img alt='' src='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg' srcset='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg 2x' class='avatar avatar-40 photo' height='40' width='40' loading='lazy' decoding='async'/></span>
+              <span class="comment-log">
+                <a href="https://vcb-s.com/archives/7228/comment-page-24#comment-38457">
+                  回复给 mio: Potplayer有个自动加载外部音频的功能，勾选上就行.                </a>
+              </span>
+            </li>
+                      <li class="list-group-item">
+              <span class="author-avatar"><img alt='' src='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg' srcset='https://vcb-s.com/wp-content/uploads/2015/03/笑颜1-150x150.jpg 2x' class='avatar avatar-40 photo' height='40' width='40' loading='lazy' decoding='async'/></span>
+              <span class="comment-log">
+                <a href="https://vcb-s.com/archives/7228/comment-page-24#comment-38456">
+                  回复给 mio: 很简单，有手就行，播放的时候把音轨拖进去，完事儿。                </a>
+              </span>
+            </li>
+                  </ul>
+      </div>
+    </aside><aside id="zan_latest_posts-7">      <div class="panel panel-zan recent hidden-xs">
+        <div class="panel-heading">
+          <i class="fa fa-refresh"></i> 最新文章          <i class="fa fa-times-circle panel-remove"></i>
+          <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush">
+                      <li class="list-group-item">
+              <span class="post-title">
+                <a href="https://vcb-s.com/archives/5113">
+                  Glass no Hana to Kowasu Sekai / 玻璃之花与崩坏的世界 10-bit 1080p HEVC BDRip [MOVIE Rev Fin]                </a>
+              </span>
+                            <span class="badge">20,954</span>
+                          </li>
+                      <li class="list-group-item">
+              <span class="post-title">
+                <a href="https://vcb-s.com/archives/21042">
+                  Beelzebub-jou no Oki ni Mesu Mama. / 只要别西卜大小姐喜欢就好。 10-bit 1080p HEVC BDRip [Fin]                </a>
+              </span>
+                            <span class="badge">77</span>
+                          </li>
+                      <li class="list-group-item">
+              <span class="post-title">
+                <a href="https://vcb-s.com/archives/11696">
+                  Mayo Chiki! / 迷茫管家与懦弱的我 10-bit 1080p HEVC BDRip [Reseed Fin]                </a>
+              </span>
+                            <span class="badge">12,647</span>
+                          </li>
+                      <li class="list-group-item">
+              <span class="post-title">
+                <a href="https://vcb-s.com/archives/21029">
+                  Ragna Crimson / 狩龙人拉格纳 10-bit 1080p HEVC BDRip [Fin]                </a>
+              </span>
+                            <span class="badge">303</span>
+                          </li>
+                      <li class="list-group-item">
+              <span class="post-title">
+                <a href="https://vcb-s.com/archives/21024">
+                  Mobile Suit Gundam Seed Freedom / 机动战士高达SEED FREEDOM 10-bit 1080p HEVC BDRip [MOVIE Fin]                </a>
+              </span>
+                            <span class="badge">569</span>
+                          </li>
+                      <li class="list-group-item">
+              <span class="post-title">
+                <a href="https://vcb-s.com/archives/21017">
+                  Shinka no Mi / 进化果实 &#038; 真·进化果实 10-bit 1080p HEVC BDRip [S1-S2 Fin]                </a>
+              </span>
+                            <span class="badge">834</span>
+                          </li>
+                      <li class="list-group-item">
+              <span class="post-title">
+                <a href="https://vcb-s.com/archives/21011">
+                  Medalist / 金牌得主 10-bit 1080p HEVC BDRip [Fin]                </a>
+              </span>
+                            <span class="badge">1,063</span>
+                          </li>
+                      <li class="list-group-item">
+              <span class="post-title">
+                <a href="https://vcb-s.com/archives/21008">
+                  Natsuyuki Rendezvous / 夏雪密会 10-bit 1080p HEVC BDRip [Fin]                </a>
+              </span>
+                            <span class="badge">385</span>
+                          </li>
+                  </ul>
+      </div>
+    </aside><aside id="zan_rand_posts-6">      <div class="panel panel-zan recent hidden-xs">
+        <div class="panel-heading">
+          <i class="fa fa-refresh"></i> 随机文章          <i class="fa fa-times-circle panel-remove"></i>
+          <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush">
+                      <li class="list-group-item">
+              <span class="post-title">
+                <a href="https://vcb-s.com/archives/15996">
+                  Punch Line 10-bit 1080p HEVC BDRip [Fin]                </a>
+              </span>
+                            <span class="badge">6,482</span>
+                          </li>
+                      <li class="list-group-item">
+              <span class="post-title">
+                <a href="https://vcb-s.com/archives/14232">
+                  Akudama Drive / 全员恶玉 10-bit 1080p HEVC BDRip [Fin]                </a>
+              </span>
+                            <span class="badge">4,702</span>
+                          </li>
+                      <li class="list-group-item">
+              <span class="post-title">
+                <a href="https://vcb-s.com/archives/20810">
+                  Shingeki no Kyojin / Attack on Titan / 进击的巨人 10-bit 1080p HEVC BDRip [S1-4 + OADs Fin]                </a>
+              </span>
+                            <span class="badge">4,585</span>
+                          </li>
+                      <li class="list-group-item">
+              <span class="post-title">
+                <a href="https://vcb-s.com/archives/20482">
+                  Megami no Cafe Terrace / 女神咖啡厅 10-bit 1080p HEVC BDRip [S1-S2 Fin]                </a>
+              </span>
+                            <span class="badge">2,538</span>
+                          </li>
+                      <li class="list-group-item">
+              <span class="post-title">
+                <a href="https://vcb-s.com/archives/20833">
+                  Go-Toubun no Hanayome SP1 / 五等分的新娘~ 10-bit 1080p HEVC BDRip [Fin]                </a>
+              </span>
+                            <span class="badge">1,496</span>
+                          </li>
+                      <li class="list-group-item">
+              <span class="post-title">
+                <a href="https://vcb-s.com/archives/16560">
+                  Fumetsu no Anata e / 致不灭的你 10-bit 1080p HEVC BDRip [S1 Fin]                </a>
+              </span>
+                            <span class="badge">6,946</span>
+                          </li>
+                      <li class="list-group-item">
+              <span class="post-title">
+                <a href="https://vcb-s.com/archives/18974">
+                  Soushin Shoujo Matoi / 神装少女小缠 10-bit 1080p HEVC BDRip [Fin]                </a>
+              </span>
+                            <span class="badge">4,693</span>
+                          </li>
+                      <li class="list-group-item">
+              <span class="post-title">
+                <a href="https://vcb-s.com/archives/5205">
+                  Charlotte / 夏洛特 1080p / 720p BDRip [Fin]                </a>
+              </span>
+                            <span class="badge">31,895</span>
+                          </li>
+                  </ul>
+      </div>
+    </aside><aside id="widget_wpcc-3">
+<div id="wpcc_widget_inner"><!--WPCC_NC_START-->
+	<span id="wpcc_original_link" class="wpcc_current_lang" ><a class="wpcc_link" href="https://vcb-s.com/archives/4567" title="不转换">不转换</a></span>
+	<span id="wpcc_zh-hans_link" class="wpcc_lang" ><a class="wpcc_link" rel="nofollow" href="https://vcb-s.com/archives/4567?variant=zh-hans" title="简体中文" >简体中文</a></span>
+	<span id="wpcc_zh-hant_link" class="wpcc_lang" ><a class="wpcc_link" rel="nofollow" href="https://vcb-s.com/archives/4567?variant=zh-hant" title="繁體中文" >繁體中文</a></span>
+	<span id="wpcc_zh-hk_link" class="wpcc_lang" ><a class="wpcc_link" rel="nofollow" href="https://vcb-s.com/archives/4567?variant=zh-hk" title="港澳繁體" >港澳繁體</a></span>
+	<span id="wpcc_zh-sg_link" class="wpcc_lang" ><a class="wpcc_link" rel="nofollow" href="https://vcb-s.com/archives/4567?variant=zh-sg" title="马新简体" >马新简体</a></span>
+	<span id="wpcc_zh-tw_link" class="wpcc_lang" ><a class="wpcc_link" rel="nofollow" href="https://vcb-s.com/archives/4567?variant=zh-tw" title="台灣正體" >台灣正體</a></span>
+<!--WPCC_NC_END--></div>
+</aside><aside id="media_image-3"><h2 class="widgettitle">↓某萝莉控の后宫↓</h2>
+<a href="https://www.mahou-shoujo.moe/"><img width="400" height="400" src="https://vcb-s.com/wp-content/uploads/2017/07/xiaoye.jpg" class="image wp-image-6679 youqing attachment-full size-full" alt="小夜的主页" style="max-width: 100%; height: auto;" title="这么可爱的小夜不来一发么" decoding="async" loading="lazy" /></a></aside>      </aside>
+		</div>
+	</div>
+</div>
+<footer id="zan-footer">
+    <div class="container">
+
+        <!-- 版权信息 -->
+        我们的征途是星河大海	Powered By <a href="http://vcb-s.com/"  target="_blank">VCB-Studio</a>
+        <!-- 版权信息结束 -->
+
+        <!--统计代码-->
+        <!--统计代码结束-->
+
+    </div>
+</footer>
+
+<!-- 回到顶端 -->
+<script type="text/javascript">
+var toTop = document.createElement('div')
+toTop.id = 'topcontrol'
+var jQtoTop = jQuery('#topcontrol')
+var topimg = new Image()
+var page = document.querySelector('#zan-bodyer')
+// 虽然有点脏，先这样了，上传文件夹权限太严了
+topimg.src = '/wp-content/customRes/backtotop.png'
+toTop.appendChild(topimg)
+jQuery(window).on('scroll', function addChild() {
+    page.appendChild(toTop)
+    jQuery(window).off('scroll', addChild)
+})
+function gotoTop (minHeight) {
+  jQuery(window).on('scroll', function addChild() {
+    page.appendChild(toTop)
+    jQuery(window).off('scroll', addChild)
+  })
+  toTop.addEventListener('click', // 定义返回顶部点击向上滚动的动画
+    function test () {
+      jQuery('html,body').animate({ scrollTop: 0 }, 700)
+    })
+  minHeight ? minHeight = minHeight : minHeight = 600 // 获取页面的最小高度，无传入值则默认为600像素
+  jQuery(window).on('scroll', function () { // 为窗口的scroll事件绑定处理函数
+    var s = jQuery(window).scrollTop() // 获取窗口的滚动条的垂直位置
+    if (s > minHeight) { // 当窗口的滚动条的垂直位置大于页面的最小高度时，让返回顶部元素渐现，否则渐隐
+      jQuery('#topcontrol').fadeIn(100)
+    } else {
+      jQuery('#topcontrol').fadeOut(200)
+    }
+  })
+}
+gotoTop();
+</script>
+<!-- 回到顶端结束 -->
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/zanblog2_1_0\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?981bb783e85caa947be546e51f35a664";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+	<!-- ShiftNav #shiftnav-main -->
+	<div class="shiftnav shiftnav-nojs shiftnav-shiftnav-main shiftnav-left-edge shiftnav-skin-custom shiftnav-transition-standard" id="shiftnav-main" data-shiftnav-id="shiftnav-main">
+		<div class="shiftnav-inner">
+
+			
+			<nav class="shiftnav-nav"><ul id="menu-navbar-1" class="shiftnav-menu shiftnav-targets-medium shiftnav-targets-text-default shiftnav-targets-icon-default shiftnav-indent-subs shiftnav-active-on-hover	shiftnav-active-highlight"><li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-7075 shiftnav-sub-always shiftnav-depth-0"><a class="shiftnav-target"  href="https://vcb-s.com/archives/category/works"><i class="fa fa-book"></i> 作品项目</a>
+<ul class="sub-menu sub-menu-1">
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3088 shiftnav-depth-1"><a class="shiftnav-target"  href="https://vcb-s.com/archives/category/works/1080p-full-hd"><i class="fa fa-play-circle-o"></i> 1080p Full HD</a></li><li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3089 shiftnav-depth-1"><a class="shiftnav-target"  href="https://vcb-s.com/archives/category/works/720p-hd"><i class="fa fa-play-circle-o"></i> 720p HD</a></li><li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3090 shiftnav-depth-1"><a class="shiftnav-target"  href="https://vcb-s.com/archives/category/works/4k-uhd"><i class="fa fa-play-circle-o"></i> 4K UHD</a></li><li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3342 shiftnav-depth-1"><a class="shiftnav-target"  href="https://vcb-s.com/archives/category/works/ms"><i class="fa fa-music"></i> 音乐/专题</a></li><li class="shiftnav-retract"><a tabindex="0" class="shiftnav-target"><i class="fa fa-chevron-left"></i> Back</a></li></ul>
+</li><li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-3128 shiftnav-sub-always shiftnav-depth-0"><a class="shiftnav-target"  href="https://vcb-s.com/archives/category/planlog"><i class="fa fa-calendar"></i> 计划与日志</a>
+<ul class="sub-menu sub-menu-1">
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3328 shiftnav-depth-1"><a class="shiftnav-target"  href="/archives/138"><i class="fa fa-film"></i> 作品项目列表</a></li><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10196 shiftnav-depth-1"><a class="shiftnav-target"  href="/archives/3551"><i class="fa fa-medkit"></i> 集中式补丁包</a></li><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17072 shiftnav-depth-1"><a class="shiftnav-target"  href="https://vcb-s.com/archives/16986"><i class="fa fa-user"></i> 招募公告汇总</a></li><li class="shiftnav-retract"><a tabindex="0" class="shiftnav-target"><i class="fa fa-chevron-left"></i> Back</a></li></ul>
+</li><li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-7074 shiftnav-sub-always shiftnav-depth-0"><a class="shiftnav-target"  href="https://vcb-s.com/archives/category/kb"><i class="fa fa-group"></i> 科普系列</a>
+<ul class="sub-menu sub-menu-1">
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2743 shiftnav-depth-1"><a class="shiftnav-target"  href="/archives/2726"><i class="fa fa-github-alt"></i> 视音频格式基础知识</a></li><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7314 shiftnav-sub-always shiftnav-depth-1"><a class="shiftnav-target"  href="/archives/16639"><i class="fa fa-wrench"></i> 视频播放器推荐</a>
+	<ul class="sub-menu sub-menu-2">
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9514 shiftnav-depth-2"><a class="shiftnav-target"  href="/archives/7594"><i class="fa fa-wrench"></i> mpv 配置入门</a></li><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2440 shiftnav-depth-2"><a class="shiftnav-target"  href="/archives/16609"><i class="fa fa-wrench"></i> MPC-HC + madVR 配置入门</a></li><li class="shiftnav-retract"><a tabindex="0" class="shiftnav-target"><i class="fa fa-chevron-left"></i> Back</a></li>	</ul>
+</li><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2456 shiftnav-depth-1"><a class="shiftnav-target"  href="/archives/1114"><i class="fa fa-bold"></i> 字体整合包</a></li><li class="shiftnav-retract"><a tabindex="0" class="shiftnav-target"><i class="fa fa-chevron-left"></i> Back</a></li></ul>
+</li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3103 shiftnav-depth-0"><a class="shiftnav-target"  href="https://vcb-s.com/contact"><i class="fa fa-coffee"></i> 留言板</a></li><li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-7076 shiftnav-sub-always shiftnav-depth-0"><a class="shiftnav-target"  href="https://vcb-s.com/archives/category/about"><i class="fa fa-user"></i> 关于 VCB-S</a>
+<ul class="sub-menu sub-menu-1">
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3347 shiftnav-depth-1"><a class="shiftnav-target"  href="/archives/675"><i class="fa fa-flag"></i> VCB-S 编年史</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3102 shiftnav-depth-1"><a class="shiftnav-target"  href="https://vcb-s.com/archive"><i class="fa fa-folder-o"></i> 文章存档</a></li><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17154 shiftnav-depth-1"><a class="shiftnav-target"  href="/vcbs_member"><i class="fa fa-user"></i> 组员简介</a></li><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13853 shiftnav-depth-1"><a class="shiftnav-target"  href="#deplay_live_2d">打开 live2d</a></li><li class="shiftnav-retract"><a tabindex="0" class="shiftnav-target"><i class="fa fa-chevron-left"></i> Back</a></li></ul>
+</li></ul></nav>
+			<button class="shiftnav-sr-close shiftnav-sr-only shiftnav-sr-only-focusable">
+				&times; Close Panel			</button>
+
+		</div><!-- /.shiftnav-inner -->
+	</div><!-- /.shiftnav #shiftnav-main -->
+
+
+	<script type="text/javascript" id="wp-polls-js-extra">
+/* <![CDATA[ */
+var pollsL10n = {"ajax_url":"https:\/\/vcb-s.com\/wp-admin\/admin-ajax.php","text_wait":"\u60a8\u7684\u4e0a\u4e00\u4e2a\u8bf7\u6c42\u4ecd\u5728\u5904\u7406\u4e2d\u3002\u8bf7\u7b49\u4e00\u4e0b......","text_valid":"\u8bf7\u9009\u62e9\u6709\u6548\u7684\u6295\u7968\u7b54\u6848\u3002","text_multiple":"\u5141\u8bb8\u7684\u6700\u5927\u9009\u62e9\u6570\u91cf\uff1a","show_loading":"1","show_fading":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://vcb-s.com/wp-content/plugins/wp-polls/polls-js.js?ver=2.77.3" id="wp-polls-js"></script>
+<script type="text/javascript" id="ppress-frontend-script-js-extra">
+/* <![CDATA[ */
+var pp_ajax_form = {"ajaxurl":"https:\/\/vcb-s.com\/wp-admin\/admin-ajax.php","confirm_delete":"Are you sure?","deleting_text":"Deleting...","deleting_error":"An error occurred. Please try again.","nonce":"eac16ec645","disable_ajax_form":"false","is_checkout":"0","is_checkout_tax_enabled":"0","is_checkout_autoscroll_enabled":"true"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://vcb-s.com/wp-content/plugins/wp-user-avatar/assets/js/frontend.min.js?ver=4.16.7" id="ppress-frontend-script-js"></script>
+<script type="text/javascript" src="https://vcb-s.com/wp-content/themes/zanblog2_1_0/ui/js/bootstrap.js?ver=3.0.0" id="bootstrap-script-js"></script>
+<script type="text/javascript" src="https://vcb-s.com/wp-content/themes/zanblog2_1_0/ui/js/jquery.icheck.js?ver=6.8.3" id="icheck-script-js"></script>
+<script type="text/javascript" src="https://vcb-s.com/wp-content/themes/zanblog2_1_0/ui/js/jquery.validate.js?ver=1.9.0" id="validate-script-js"></script>
+<script type="text/javascript" src="https://vcb-s.com/wp-content/themes/zanblog2_1_0/ui/js/jquery.lazyload.min.js?ver=1.9.3" id="lazyload-script-js"></script>
+<script type="text/javascript" src="https://vcb-s.com/wp-content/themes/zanblog2_1_0/ui/js/zanblog.min.js?ver=2.1.6" id="zanblog-script-js"></script>
+<script type="text/javascript" src="https://vcb-s.com/wp-content/themes/zanblog2_1_0/ui/js/tslib/2.0.1/tslib.min.js?ver=6.8.3" id="tslib-js"></script>
+<script type="text/javascript" src="https://vcb-s.com/live2d/live2d_global_var.js?ver=1.0.0" id="live2d_global_var-js"></script>
+<script type="text/javascript" src="https://vcb-s.com/live2d/live2d_loader.js?ver=1.0.1" id="live2d_loader-js"></script>
+<script type="text/javascript" src="https://vcb-s.com/wp-content/themes/zanblog2_1_0/ui/js/custom.min.js?ver=1.0.26" id="custom-script-js"></script>
+<script type="text/javascript" id="shiftnav-js-extra">
+/* <![CDATA[ */
+var shiftnav_data = {"shift_body":"on","shift_body_wrapper":"","lock_body":"on","lock_body_x":"off","open_current":"off","collapse_accordions":"off","scroll_panel":"on","breakpoint":"991","v":"1.8.1","pro":"0","touch_off_close":"on","scroll_offset":"100","disable_transforms":"off","close_on_target_click":"off","scroll_top_boundary":"50","scroll_tolerance":"10","process_uber_segments":"on"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://vcb-s.com/wp-content/plugins/shiftnav-responsive-mobile-menu/assets/js/shiftnav.min.js?ver=1.8.1" id="shiftnav-js"></script>
+
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9a4738313a0fd3d6',t:'MTc2NDEzNzM5Mg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
+</body>
+</html>
+
+<!-- Dynamic page generated in 1.748 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2025-11-26 14:06:45 -->
+
+<!-- Compression = gzip -->
